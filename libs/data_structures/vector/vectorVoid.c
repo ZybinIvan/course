@@ -12,7 +12,6 @@ vectorVoid createVectorV(size_t n, size_t baseTypeSize) {
         fprintf(stderr, "bad alloc");
         exit(1);
     }
-
     return (vectorVoid) {data, 0, n, baseTypeSize};
 }
 
@@ -87,7 +86,6 @@ void pushBackV(vectorVoid *v, void *source) {
         else
             reserveV(v, v->capacity * 2);
     }
-
     setVectorValueV(v, v->size++, source);
 }
 
