@@ -12,6 +12,7 @@ vector createVector(size_t n) {
 
 void reserve(vector *v, size_t newCapacity) {
     v->data = realloc(v->data, sizeof(int) * newCapacity);
+
     if (v->data == NULL && newCapacity > 0) {
         fprintf(stderr, "bad alloc");
         exit(1);
