@@ -1,2 +1,3 @@
 add_library(data_structures
-        vector/vector.c)
+        vector/vector.c
+        vector/vectorVoid.c)

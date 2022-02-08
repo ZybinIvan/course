@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/laba5b.dir/libs/data_structures/vector/vector.c.obj"
+  "CMakeFiles/laba5b.dir/libs/data_structures/vector/vectorVoid.c.obj"
   "CMakeFiles/laba5b.dir/main.c.obj"
   "laba5b.exe"
   "laba5b.exe.manifest"

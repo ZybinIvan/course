@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdint.h>
-#include "libs/data_structures/vector/vector.h"
 #include <assert.h>
+
+#include "libs/data_structures/vector/vector.h"
+#include "libs/data_structures//vector/vectorVoid.h"
+
 
 void test_pushBack_emptyVector() {
     vector v = createVector(3);
@@ -136,6 +139,8 @@ void test() {
 
 int main() {
     test();
+
+    vectorVoid vv;
 
     return 0;
 }

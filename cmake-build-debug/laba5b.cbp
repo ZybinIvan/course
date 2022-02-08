@@ -80,6 +80,12 @@
 		<Unit filename="C:/Projects/CLion/laba5b/libs/data_structures/vector/vector.h">
 			<Option target="laba5b"/>
 		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b/libs/data_structures/vector/vectorVoid.c">
+			<Option target="laba5b"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b/libs/data_structures/vector/vectorVoid.h">
+			<Option target="laba5b"/>
+		</Unit>
 		<Unit filename="C:/Projects/CLion/laba5b/main.c">
 			<Option target="laba5b"/>
 		</Unit>

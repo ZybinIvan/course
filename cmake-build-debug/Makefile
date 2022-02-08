@@ -152,6 +152,30 @@ libs/data_structures/vector/vector.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/vector/vector.c.s
 .PHONY : libs/data_structures/vector/vector.c.s
 
+libs/data_structures/vector/vectorVoid.obj: libs/data_structures/vector/vectorVoid.c.obj
+.PHONY : libs/data_structures/vector/vectorVoid.obj
+
+# target to build an object file
+libs/data_structures/vector/vectorVoid.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/vector/vectorVoid.c.obj
+.PHONY : libs/data_structures/vector/vectorVoid.c.obj
+
+libs/data_structures/vector/vectorVoid.i: libs/data_structures/vector/vectorVoid.c.i
+.PHONY : libs/data_structures/vector/vectorVoid.i
+
+# target to preprocess a source file
+libs/data_structures/vector/vectorVoid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/vector/vectorVoid.c.i
+.PHONY : libs/data_structures/vector/vectorVoid.c.i
+
+libs/data_structures/vector/vectorVoid.s: libs/data_structures/vector/vectorVoid.c.s
+.PHONY : libs/data_structures/vector/vectorVoid.s
+
+# target to generate assembly for a file
+libs/data_structures/vector/vectorVoid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/vector/vectorVoid.c.s
+.PHONY : libs/data_structures/vector/vectorVoid.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... libs/data_structures/vector/vector.obj
 	@echo ... libs/data_structures/vector/vector.i
 	@echo ... libs/data_structures/vector/vector.s
+	@echo ... libs/data_structures/vector/vectorVoid.obj
+	@echo ... libs/data_structures/vector/vectorVoid.i
+	@echo ... libs/data_structures/vector/vectorVoid.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
