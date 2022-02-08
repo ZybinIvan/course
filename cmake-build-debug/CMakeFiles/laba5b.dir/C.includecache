@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Projects/CLion/laba5b/libs/data_structures/vector/vector.c
+vector.h
+C:/Projects/CLion/laba5b/libs/data_structures/vector/vector.h
+
 C:/Projects/CLion/laba5b/libs/data_structures/vector/vector.h
 stdio.h
 -
