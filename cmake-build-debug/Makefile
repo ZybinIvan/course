@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projects\CLion\laba5b
+CMAKE_SOURCE_DIR = C:\Projects\CLion\laba5b_5d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projects\CLion\laba5b\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Projects\CLion\laba5b_5d\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\CLion\laba5b\cmake-build-debug\CMakeFiles C:\Projects\CLion\laba5b\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles C:\Projects\CLion\laba5b_5d\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\CLion\laba5b\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,6 +127,30 @@ laba5b: cmake_check_build_system
 laba5b/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/build
 .PHONY : laba5b/fast
+
+libs/data_structures/matrix/matrix.obj: libs/data_structures/matrix/matrix.c.obj
+.PHONY : libs/data_structures/matrix/matrix.obj
+
+# target to build an object file
+libs/data_structures/matrix/matrix.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/matrix/matrix.c.obj
+.PHONY : libs/data_structures/matrix/matrix.c.obj
+
+libs/data_structures/matrix/matrix.i: libs/data_structures/matrix/matrix.c.i
+.PHONY : libs/data_structures/matrix/matrix.i
+
+# target to preprocess a source file
+libs/data_structures/matrix/matrix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/matrix/matrix.c.i
+.PHONY : libs/data_structures/matrix/matrix.c.i
+
+libs/data_structures/matrix/matrix.s: libs/data_structures/matrix/matrix.c.s
+.PHONY : libs/data_structures/matrix/matrix.s
+
+# target to generate assembly for a file
+libs/data_structures/matrix/matrix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/matrix/matrix.c.s
+.PHONY : libs/data_structures/matrix/matrix.c.s
 
 libs/data_structures/vector/vector.obj: libs/data_structures/vector/vector.c.obj
 .PHONY : libs/data_structures/vector/vector.obj
@@ -209,6 +233,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... laba5b
+	@echo ... libs/data_structures/matrix/matrix.obj
+	@echo ... libs/data_structures/matrix/matrix.i
+	@echo ... libs/data_structures/matrix/matrix.s
 	@echo ... libs/data_structures/vector/vector.obj
 	@echo ... libs/data_structures/vector/vector.i
 	@echo ... libs/data_structures/vector/vector.s
