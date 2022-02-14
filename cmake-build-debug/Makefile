@@ -116,24 +116,74 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named laba5b
+# Target rules for targets named laba5b_5d
 
 # Build rule for target.
-laba5b: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 laba5b
-.PHONY : laba5b
+laba5b_5d: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 laba5b_5d
+.PHONY : laba5b_5d
 
 # fast build rule for target.
-laba5b/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/build
-.PHONY : laba5b/fast
+laba5b_5d/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/build
+.PHONY : laba5b_5d/fast
+
+#=============================================================================
+# Target rules for targets named data_structures
+
+# Build rule for target.
+data_structures: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 data_structures
+.PHONY : data_structures
+
+# fast build rule for target.
+data_structures/fast:
+	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
+.PHONY : data_structures/fast
+
+#=============================================================================
+# Target rules for targets named algorithms
+
+# Build rule for target.
+algorithms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 algorithms
+.PHONY : algorithms
+
+# fast build rule for target.
+algorithms/fast:
+	$(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/build
+.PHONY : algorithms/fast
+
+libs/algorithms/algorithms.obj: libs/algorithms/algorithms.c.obj
+.PHONY : libs/algorithms/algorithms.obj
+
+# target to build an object file
+libs/algorithms/algorithms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/algorithms/algorithms.c.obj
+.PHONY : libs/algorithms/algorithms.c.obj
+
+libs/algorithms/algorithms.i: libs/algorithms/algorithms.c.i
+.PHONY : libs/algorithms/algorithms.i
+
+# target to preprocess a source file
+libs/algorithms/algorithms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/algorithms/algorithms.c.i
+.PHONY : libs/algorithms/algorithms.c.i
+
+libs/algorithms/algorithms.s: libs/algorithms/algorithms.c.s
+.PHONY : libs/algorithms/algorithms.s
+
+# target to generate assembly for a file
+libs/algorithms/algorithms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/algorithms/algorithms.c.s
+.PHONY : libs/algorithms/algorithms.c.s
 
 libs/data_structures/matrix/matrix.obj: libs/data_structures/matrix/matrix.c.obj
 .PHONY : libs/data_structures/matrix/matrix.obj
 
 # target to build an object file
 libs/data_structures/matrix/matrix.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/matrix/matrix.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/data_structures/matrix/matrix.c.obj
 .PHONY : libs/data_structures/matrix/matrix.c.obj
 
 libs/data_structures/matrix/matrix.i: libs/data_structures/matrix/matrix.c.i
@@ -141,7 +191,7 @@ libs/data_structures/matrix/matrix.i: libs/data_structures/matrix/matrix.c.i
 
 # target to preprocess a source file
 libs/data_structures/matrix/matrix.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/matrix/matrix.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/data_structures/matrix/matrix.c.i
 .PHONY : libs/data_structures/matrix/matrix.c.i
 
 libs/data_structures/matrix/matrix.s: libs/data_structures/matrix/matrix.c.s
@@ -149,7 +199,7 @@ libs/data_structures/matrix/matrix.s: libs/data_structures/matrix/matrix.c.s
 
 # target to generate assembly for a file
 libs/data_structures/matrix/matrix.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/matrix/matrix.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/data_structures/matrix/matrix.c.s
 .PHONY : libs/data_structures/matrix/matrix.c.s
 
 libs/data_structures/vector/vector.obj: libs/data_structures/vector/vector.c.obj
@@ -157,7 +207,7 @@ libs/data_structures/vector/vector.obj: libs/data_structures/vector/vector.c.obj
 
 # target to build an object file
 libs/data_structures/vector/vector.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/vector/vector.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vector.c.obj
 .PHONY : libs/data_structures/vector/vector.c.obj
 
 libs/data_structures/vector/vector.i: libs/data_structures/vector/vector.c.i
@@ -165,7 +215,7 @@ libs/data_structures/vector/vector.i: libs/data_structures/vector/vector.c.i
 
 # target to preprocess a source file
 libs/data_structures/vector/vector.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/vector/vector.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vector.c.i
 .PHONY : libs/data_structures/vector/vector.c.i
 
 libs/data_structures/vector/vector.s: libs/data_structures/vector/vector.c.s
@@ -173,7 +223,7 @@ libs/data_structures/vector/vector.s: libs/data_structures/vector/vector.c.s
 
 # target to generate assembly for a file
 libs/data_structures/vector/vector.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/vector/vector.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vector.c.s
 .PHONY : libs/data_structures/vector/vector.c.s
 
 libs/data_structures/vector/vectorVoid.obj: libs/data_structures/vector/vectorVoid.c.obj
@@ -181,7 +231,7 @@ libs/data_structures/vector/vectorVoid.obj: libs/data_structures/vector/vectorVo
 
 # target to build an object file
 libs/data_structures/vector/vectorVoid.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/vector/vectorVoid.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.obj
 .PHONY : libs/data_structures/vector/vectorVoid.c.obj
 
 libs/data_structures/vector/vectorVoid.i: libs/data_structures/vector/vectorVoid.c.i
@@ -189,7 +239,7 @@ libs/data_structures/vector/vectorVoid.i: libs/data_structures/vector/vectorVoid
 
 # target to preprocess a source file
 libs/data_structures/vector/vectorVoid.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/vector/vectorVoid.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.i
 .PHONY : libs/data_structures/vector/vectorVoid.c.i
 
 libs/data_structures/vector/vectorVoid.s: libs/data_structures/vector/vectorVoid.c.s
@@ -197,7 +247,7 @@ libs/data_structures/vector/vectorVoid.s: libs/data_structures/vector/vectorVoid
 
 # target to generate assembly for a file
 libs/data_structures/vector/vectorVoid.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/libs/data_structures/vector/vectorVoid.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.s
 .PHONY : libs/data_structures/vector/vectorVoid.c.s
 
 main.obj: main.c.obj
@@ -205,7 +255,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -213,7 +263,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -221,7 +271,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b.dir\build.make CMakeFiles/laba5b.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -232,7 +282,12 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... laba5b
+	@echo ... algorithms
+	@echo ... data_structures
+	@echo ... laba5b_5d
+	@echo ... libs/algorithms/algorithms.obj
+	@echo ... libs/algorithms/algorithms.i
+	@echo ... libs/algorithms/algorithms.s
 	@echo ... libs/data_structures/matrix/matrix.obj
 	@echo ... libs/data_structures/matrix/matrix.i
 	@echo ... libs/data_structures/matrix/matrix.s

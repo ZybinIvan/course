@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/laba5b.dir/libs/algorithms/algorithms.c.obj"
   "CMakeFiles/laba5b.dir/libs/data_structures/matrix/matrix.c.obj"
   "CMakeFiles/laba5b.dir/libs/data_structures/vector/vector.c.obj"
   "CMakeFiles/laba5b.dir/libs/data_structures/vector/vectorVoid.c.obj"
