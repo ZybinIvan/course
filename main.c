@@ -483,6 +483,48 @@ void test_isMutuallyInverseMatrices() {
     freeMemMatrix(m2);
 }
 
+
+int max2(int a, int b) {
+    return a > b ? a : b;
+}
+
+long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
+    long long sum = 0;
+    for (int i = 1; i < m.nCols; ++i) {
+        int indexRow = 0;
+        int indexCol = i;
+        int max = m.values[0][i];
+        while (indexRow < m.nRows && indexCol < m.nCols)
+            max = max2(max, m.values[indexRow++][indexCol++]);
+
+        sum += max;
+    }
+
+    for (int i = 1; i < m.nRows; ++i) {
+        int indexRow = i;
+        int indexCol = 0;
+        int max = m.values[i][0];
+        while (indexRow < m.nRows && indexCol < m.nCols)
+            max = max2(max, m.values[indexRow++][indexCol++]);
+
+        sum += max;
+    }
+
+    return sum;
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal() {
+    int a[] = {3, 2, 5, 4,
+               1, 3, 6, 3,
+               3, 2, 1, 2};
+    matrix m1 = createMatrixFromArray(a, 3, 4);
+
+    assert(findSumOfMaxesOfPseudoDiagonal(m1) == 20);
+
+    freeMemMatrix(m1);
+}
+
+
 void testsOfTasks() {
     test_swapRowsWithMaxAndMinElement();
     test_sortRowsByMaxElements();
@@ -495,6 +537,7 @@ void testsOfTasks() {
     test_transposeIfMatrixHasNotEqualSumOfRows();
     test_transposeIfMatrixHasNotEqualSumOfRows2();
     test_isMutuallyInverseMatrices();
+    test_findSumOfMaxesOfPseudoDiagonal();
 }
 
 int main() {
