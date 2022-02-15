@@ -35,6 +35,30 @@ void test_swapColumns() {
     freeMemMatrix(m);
 }
 
+void test_insertionSortRowsMatrixByRowCriteria() {
+    int a[] = {3, 4,
+               1, 2};
+    matrix m = createMatrixFromArray(a, 2, 2);
+
+    insertionSortRowsMatrixByRowCriteria(m, getSum);
+
+    assert(m.values[0][0] == 1 && m.values[0][1] == 2 && m.values[1][0] == 3 && m.values[1][1] == 4);
+
+    freeMemMatrix(m);
+}
+
+void test_insertionSortColsMatrixByColCriteria() {
+    int a[] = {3, 1,
+               4, 2};
+    matrix m = createMatrixFromArray(a, 2, 2);
+
+    insertionSortColsMatrixByColCriteria(m, getSum);
+
+    assert(m.values[0][0] == 1 && m.values[0][1] == 3 && m.values[1][0] == 2 && m.values[1][1] == 4);
+
+    freeMemMatrix(m);
+}
+
 void test_isSquareMatrix() {
     int a[] = {1, 2,
                3, 4};
@@ -150,13 +174,13 @@ void test_getMinValuePos() {
     freeMemMatrix(m);
 }
 
-void test_getMaxValuePos(){
+void test_getMaxValuePos() {
     int a[] = {1, 5,
                3, 4};
     matrix m = createMatrixFromArray(a, 2, 2);
 
     position p = getMaxValuePos(m);
-    assert(m.values[p.rowIndex][p.colIndex]  == 5);
+    assert(m.values[p.rowIndex][p.colIndex] == 5);
 
     freeMemMatrix(m);
 }
@@ -164,6 +188,8 @@ void test_getMaxValuePos(){
 void testMatrix() {
     test_swapRows();
     test_swapColumns();
+    test_insertionSortRowsMatrixByRowCriteria();
+    test_insertionSortColsMatrixByColCriteria();
     test_isSquareMatrix();
     test_isSquareMatrix_NotSquareMatrix();
     test_twoMatricesEqual_EqualMatrices();
