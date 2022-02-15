@@ -228,8 +228,40 @@ void test_swapRowsWithMaxAndMinElement() {
     freeMemMatrix(ml);
 }
 
+int getMax(int *a, int n) {
+    int max = a[0];
+    for (int i = 1; i < n; ++i)
+        if (a[i] > max)
+            max = a[i];
+
+    return max;
+}
+
+void sortRowsByMaxElements(matrix m) {
+    insertionSortRowsMatrixByRowCriteria(m, getMax);
+}
+
+void test_sortRowsByMaxElements() {
+    int a[] = {7, 1, 2,
+               1, 8, 1,
+               3, 2, 3};
+    matrix m = createMatrixFromArray(a, 3, 3);
+
+    int b[] = {3, 2, 3,
+               7, 1, 2,
+               1, 8, 1};
+    matrix ml = createMatrixFromArray(b, 3, 3);
+
+    sortRowsByMaxElements(m);
+    assert(areTwoMatricesEqual(m, ml));
+
+    freeMemMatrix(m);
+    freeMemMatrix(ml);
+}
+
 void testsOfTasks() {
     test_swapRowsWithMaxAndMinElement();
+    test_sortRowsByMaxElements();
 }
 
 int main() {
