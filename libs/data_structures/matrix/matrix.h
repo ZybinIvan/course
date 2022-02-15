@@ -53,4 +53,6 @@ bool isEMatrix(matrix m);
 
 bool isSymmetricMatrix(matrix m);
 
+void transposeSquareMatrix(matrix m);
+
 #endif //LABA5B_MATRIX_H

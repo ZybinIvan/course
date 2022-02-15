@@ -16,7 +16,7 @@ int main() {
     inputMatrix(m);
     outputMatrix(m);
     printf("\n");
-    insertionSortColsMatrixByColCriteria(m, getSum);
+    transposeSquareMatrix(m);
     outputMatrix(m);
 
     return 0;
