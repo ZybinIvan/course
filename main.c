@@ -16,8 +16,7 @@ int main() {
     inputMatrix(m);
     outputMatrix(m);
     printf("\n");
-    transposeSquareMatrix(m);
-    outputMatrix(m);
+    printf("%d %d\n", getMinValuePos(m).rowIndex, getMinValuePos(m).colIndex);
 
     return 0;
 }

@@ -157,3 +157,27 @@ void transposeSquareMatrix(matrix m) {
         }
     }
 }
+
+position getMinValuePos(matrix m) {
+    position min = {0, 0};
+    for (int i = 0; i < m.nRows; ++i)
+        for (int j = 0; j < m.nCols; ++j)
+            if (m.values[i][j] < m.values[min.rowIndex][min.colIndex]) {
+                min.rowIndex = i;
+                min.colIndex = j;
+            }
+
+    return min;
+}
+
+position getMaxValuePos(matrix m) {
+    position max = {0, 0};
+    for (int i = 0; i < m.nRows; ++i)
+        for (int j = 0; j < m.nCols; ++j)
+            if (m.values[i][j] > m.values[max.rowIndex][max.colIndex]) {
+                max.rowIndex = i;
+                max.colIndex = j;
+            }
+
+    return max;
+}
