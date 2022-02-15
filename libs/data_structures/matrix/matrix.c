@@ -67,3 +67,41 @@ void swapColumns(matrix m, int j1, int j2) {
         m.values[i][j2] = t;
     }
 }
+
+void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int)) {
+    int *criteriaResults = (int *) malloc(sizeof(int) * m.nRows);
+    for (int i = 0; i < m.nRows; ++i)
+        criteriaResults[i] = criteria(m.values[i], m.nCols);
+
+    for (int i = 0; i < m.nRows; ++i) {
+        int j = i;
+        while (j > 0 && criteriaResults[j - 1] > criteriaResults[i]) {
+            swapRows(m, j, j - 1);
+            j--;
+        }
+    }
+
+    free(criteriaResults);
+}
+
+void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int)) {
+    int *criteriaResults = (int *) malloc(sizeof(int) * m.nCols);
+    int *column = (int *) malloc(sizeof(int ) * m.nRows);
+    for (int i = 0; i < m.nCols; ++i) {
+        for (int j = 0; j < m.nRows; ++j)
+            column[j] = m.values[j][i];
+        criteriaResults[i] = criteria(column, m.nRows);
+    }
+
+    free(column);
+
+    for (int i = 0; i < m.nCols; ++i) {
+        int j = i;
+        while (j > 0 && criteriaResults[j - 1] > criteriaResults[i]) {
+            swapColumns(m, j, j - 1);
+            j--;
+        }
+    }
+
+    free(criteriaResults);
+}

@@ -4,13 +4,19 @@
 
 #include "libs/data_structures/matrix/matrix.h"
 
+int getSum(int *a, int size) {
+    int sum = 0;
+    for (int i = 0; i < size; ++i)
+        sum += a[i];
+    return sum;
+}
 
 int main() {
-    matrix m = getMemMatrix(4, 3);
+    matrix m = getMemMatrix(3, 3);
     inputMatrix(m);
     outputMatrix(m);
     printf("\n");
-    swapColumns(m, 1, 2);
+    insertionSortColsMatrixByColCriteria(m, getSum);
     outputMatrix(m);
 
     return 0;
