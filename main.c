@@ -203,9 +203,38 @@ void testMatrix() {
     test_getMaxValuePos();
 }
 
+void swapRowsWithMaxAndMinElement(matrix m) {
+    position max = getMaxValuePos(m);
+    position min = getMinValuePos(m);
+
+    swapRows(m, max.rowIndex, min.rowIndex);
+}
+
+void test_swapRowsWithMaxAndMinElement() {
+    int a[] = {1, 2, 3,
+               4, 5, 6,
+               7, 8, 9};
+    matrix m = createMatrixFromArray(a, 3, 3);
+
+    int b[] = {7, 8, 9,
+               4, 5, 6,
+               1, 2, 3};
+    matrix ml = createMatrixFromArray(b, 3, 3);
+
+    swapRowsWithMaxAndMinElement(m);
+    assert(areTwoMatricesEqual(m, ml));
+
+    freeMemMatrix(m);
+    freeMemMatrix(ml);
+}
+
+void testsOfTasks() {
+    test_swapRowsWithMaxAndMinElement();
+}
 
 int main() {
     testMatrix();
+    testsOfTasks();
 
     return 0;
 }
