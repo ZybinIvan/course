@@ -93,10 +93,8 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int))
     int *criteriaResults = (int *) malloc(sizeof(int) * m.nCols);
     int *column = (int *) malloc(sizeof(int) * m.nRows);
     for (int i = 0; i < m.nCols; ++i) {
-        for (int j = 0; j < m.nRows; ++j) {
-            int t = m.values[j][i];
+        for (int j = 0; j < m.nRows; ++j)
             column[j] = m.values[j][i];
-        }
         criteriaResults[i] = criteria(column, m.nRows);
     }
 

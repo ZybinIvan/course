@@ -291,10 +291,136 @@ void test_sortColsByMnElements() {
     freeMemMatrix(ml);
 }
 
+matrix mulMatrices(matrix m1, matrix m2) {
+    if (m1.nCols != m2.nRows) {
+        printf("the number of columns is not equal to the number of rows");
+        exit(1);
+    }
+
+    matrix mul = getMemMatrix(m1.nRows, m2.nCols);
+    for (int i = 0; i < m1.nRows; ++i) {
+        for (int j = 0; j < m2.nCols; ++j) {
+            int element = 0;
+            for (int k = 0; k < m1.nCols; ++k)
+                element += m1.values[i][k] * m2.values[k][j];
+            mul.values[i][j] = element;
+        }
+    }
+
+    return mul;
+}
+
+void test_mulMatrices() {
+    int a[] = {5, -1, 0,
+               2, 1, 1};
+    matrix m1 = createMatrixFromArray(a, 2, 3);
+
+    int b[] = {0, 2,
+               3, 1,
+               -1, -2};
+    matrix m2 = createMatrixFromArray(b, 3, 2);
+
+    int mul[] = {-3, 9,
+                 2, 3};
+    matrix m3 = createMatrixFromArray(mul, 2, 2);
+
+    assert(areTwoMatricesEqual(mulMatrices(m1, m2), m3));
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+    freeMemMatrix(m3);
+}
+
+void test_mulMatrices2() {
+    int a[] = {0, 2,
+               3, 1,
+               -1, -2};
+    matrix m1 = createMatrixFromArray(a, 3, 2);
+
+    int b[] = {5, -1, 0,
+               2, 1, 1};
+    matrix m2 = createMatrixFromArray(b, 2, 3);
+
+    int mul[] = {4, 2, 2,
+                 17, -2, 1,
+                 -9, -1, -2};
+    matrix m3 = createMatrixFromArray(mul, 3, 3);
+
+    assert(areTwoMatricesEqual(mulMatrices(m1, m2), m3));
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+    freeMemMatrix(m3);
+}
+
+void test_mulMatrices3() {
+    int a[] = {1, 2,
+               3, 4};
+    matrix m1 = createMatrixFromArray(a, 2, 2);
+
+    int b[] = {1, 0,
+               2, 3};
+    matrix m2 = createMatrixFromArray(b, 2, 2);
+
+    int mul[] = {5, 6,
+                 11, 12};
+    matrix m3 = createMatrixFromArray(mul, 2, 2);
+
+    assert(areTwoMatricesEqual(mulMatrices(m1, m2), m3));
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+    freeMemMatrix(m3);
+}
+
+void getSquareOfMatrixIfSymmetric(matrix *m) {
+    if (isSymmetricMatrix(*m))
+        mulMatrices(*m, *m);
+}
+
+void test_getSquareOfMatrixIfSymmetric() {
+    int a[] = {1, 3, 0,
+               3, 2, 6,
+               0, 6, 5};
+    matrix m1 = createMatrixFromArray(a, 3, 3);
+
+    int b[] = {10, 9, 18,
+               9, 49, 42,
+               18, 42, 61};
+    matrix m2 = createMatrixFromArray(b, 3, 3);
+
+    assert(areTwoMatricesEqual(mulMatrices(m1, m1), m2));
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
+void test_getSquareOfMatrixIfSymmetric_notSymmetric() {
+    int a[] = {1, 3, 1,
+               3, 2, 6,
+               0, 6, 5};
+    matrix m1 = createMatrixFromArray(a, 3, 3);
+
+    int b[] = {10, 9, 18,
+               9, 49, 42,
+               18, 42, 61};
+    matrix m2 = createMatrixFromArray(b, 3, 3);
+
+    assert(!areTwoMatricesEqual(mulMatrices(m1, m1), m2));
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
 void testsOfTasks() {
     test_swapRowsWithMaxAndMinElement();
     test_sortRowsByMaxElements();
     test_sortColsByMnElements();
+    test_mulMatrices();
+    test_mulMatrices2();
+    test_mulMatrices3();
+    test_getSquareOfMatrixIfSymmetric();
+    test_getSquareOfMatrixIfSymmetric_notSymmetric();
 }
 
 int main() {
