@@ -59,4 +59,8 @@ position getMinValuePos(matrix m);
 
 position getMaxValuePos(matrix m);
 
+matrix createMatrixFromArray(const int *a, size_t nRows, size_t nCols);
+
+matrix *createArrayOfMatrixFromArray(const int *values, int nMatrices, int nRows, int nCols);
+
 #endif //LABA5B_MATRIX_H
