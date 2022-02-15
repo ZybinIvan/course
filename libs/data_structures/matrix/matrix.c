@@ -86,7 +86,7 @@ void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int))
 
 void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int)) {
     int *criteriaResults = (int *) malloc(sizeof(int) * m.nCols);
-    int *column = (int *) malloc(sizeof(int ) * m.nRows);
+    int *column = (int *) malloc(sizeof(int) * m.nRows);
     for (int i = 0; i < m.nCols; ++i) {
         for (int j = 0; j < m.nRows; ++j)
             column[j] = m.values[j][i];
@@ -104,4 +104,44 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int))
     }
 
     free(criteriaResults);
+}
+
+bool isSquareMatrix(matrix m) {
+    return m.nCols == m.nRows;
+}
+
+bool areTwoMatricesEqual(matrix m1, matrix m2) {
+    if (m1.nRows != m2.nRows || m1.nCols != m2.nCols)
+        return false;
+    for (int i = 0; i < m1.nRows; ++i) {
+        for (int j = 0; j < m1.nCols; ++j)
+            if (m1.values[i][j] != m2.values[i][j])
+                return false;
+    }
+
+    return true;
+}
+
+bool isEMatrix(matrix m) {
+    if (!isSquareMatrix(m))
+        return false;
+    for (int i = 0; i < m.nRows; ++i)
+        for (int j = 0; j < m.nCols; ++j)
+            if (i == j && m.values[i][j] != 1 || i != j && m.values[i][j] != 0)
+                return false;
+
+
+    return true;
+}
+
+bool isSymmetricMatrix(matrix m) {
+    if (!isSquareMatrix(m))
+        return false;
+    for (int i = 0; i < m.nRows; ++i)
+        for (int j = 0; j < m.nCols; ++j)
+            if (m.values[i][j] != m.values[j][i])
+                return false;
+
+
+    return true;
 }

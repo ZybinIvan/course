@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 typedef struct matrix {
     int **values;
@@ -43,5 +44,13 @@ void swapColumns(matrix m, int j1, int j2);
 void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int));
 
 void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int));
+
+bool isSquareMatrix(matrix m);
+
+bool areTwoMatricesEqual(matrix m1, matrix m2);
+
+bool isEMatrix(matrix m);
+
+bool isSymmetricMatrix(matrix m);
 
 #endif //LABA5B_MATRIX_H
