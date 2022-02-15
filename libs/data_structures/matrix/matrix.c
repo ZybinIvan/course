@@ -4,6 +4,8 @@
 
 #include "matrix.h"
 
+#include "../../algorithms/algorithms.h"
+
 matrix getMemMatrix(int nRows, int nCols) {
     int **values = (int **) malloc(sizeof(int *) * nRows);
     for (int i = 0; i < nRows; ++i)
@@ -74,11 +76,14 @@ void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int))
         criteriaResults[i] = criteria(m.values[i], m.nCols);
 
     for (int i = 0; i < m.nRows; ++i) {
+        int t = criteriaResults[i];
         int j = i;
-        while (j > 0 && criteriaResults[j - 1] > criteriaResults[i]) {
+        while (j > 0 && criteriaResults[j - 1] > t) {
+            criteriaResults[j] = criteriaResults[j - 1];
             swapRows(m, j, j - 1);
             j--;
         }
+        criteriaResults[j] = t;
     }
 
     free(criteriaResults);
@@ -88,19 +93,24 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int))
     int *criteriaResults = (int *) malloc(sizeof(int) * m.nCols);
     int *column = (int *) malloc(sizeof(int) * m.nRows);
     for (int i = 0; i < m.nCols; ++i) {
-        for (int j = 0; j < m.nRows; ++j)
+        for (int j = 0; j < m.nRows; ++j) {
+            int t = m.values[j][i];
             column[j] = m.values[j][i];
+        }
         criteriaResults[i] = criteria(column, m.nRows);
     }
 
     free(column);
 
     for (int i = 0; i < m.nCols; ++i) {
+        int t = criteriaResults[i];
         int j = i;
-        while (j > 0 && criteriaResults[j - 1] > criteriaResults[i]) {
+        while (j > 0 && criteriaResults[j - 1] > t) {
+            criteriaResults[j] = criteriaResults[j - 1];
             swapColumns(m, j, j - 1);
             j--;
         }
+        criteriaResults[j] = t;
     }
 
     free(criteriaResults);

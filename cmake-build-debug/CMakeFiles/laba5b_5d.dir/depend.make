@@ -4,6 +4,7 @@
 CMakeFiles/laba5b_5d.dir/libs/algorithms/algorithms.c.obj: \
  ../libs/algorithms/algorithms.c
 CMakeFiles/laba5b_5d.dir/libs/data_structures/matrix/matrix.c.obj: \
+ ../libs/algorithms/algorithms.h \
  ../libs/data_structures/matrix/matrix.c \
  ../libs/data_structures/matrix/matrix.h
 CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vector.c.obj: \
