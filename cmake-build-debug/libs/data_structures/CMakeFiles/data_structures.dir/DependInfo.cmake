@@ -8,7 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/matrix_tasks/test_matrix_tasks.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/Tests/matrix/matrix_tasks/test_matrix_tasks.c.obj"
+  "C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/matrix_tests/testFunctionsOfMatrix.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/Tests/matrix/matrix_tests/testFunctionsOfMatrix.c.obj"
+  "C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/vector/testFunctionsOfVector.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/Tests/vector/testFunctionsOfVector.c.obj"
   "C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj"
+  "C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/tasks.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.obj"
   "C:/Projects/CLion/laba5b_5d/libs/data_structures/vector/vector.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj"
   "C:/Projects/CLion/laba5b_5d/libs/data_structures/vector/vectorVoid.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj"
   )

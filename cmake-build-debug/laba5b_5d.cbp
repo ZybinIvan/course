@@ -160,6 +160,30 @@
 		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.h">
 			<Option target="laba5b_5d"/>
 		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/tasks.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/tasks.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/matrix_tasks/test_matrix_tasks.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/matrix_tasks/test_matrix_tasks.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/matrix_tests/testFunctionsOfMatrix.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/matrix_tests/testFunctionsOfMatrix.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/vector/testFunctionsOfVector.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/vector/testFunctionsOfVector.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/data_structures/vector/vector.c">
 			<Option target="laba5b_5d"/>
 			<Option target="data_structures"/>
