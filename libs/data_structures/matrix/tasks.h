@@ -45,4 +45,14 @@ int countEqClassesByRowsSum(matrix m);
 
 int getNSpecialElement(matrix m);
 
+position getLeftMin(matrix m);
+
+void swapPenultimateRow(matrix m, int n);
+
+bool isNonDescendingSorted(int *a, int n);
+
+bool hasAllNonDescendingRows(matrix m);
+
+int countNonDescendingRowsMatrices(matrix *ms, int nMatrix);
+
 #endif //LABA5B_5D_TASKS_H

@@ -44,4 +44,14 @@ void test_countEqClassesByRowsSum();
 
 void test_getNSpecialElement();
 
+void test_swapPenultimateRow();
+
+void test_swapPenultimateRow2();
+
+void test_swapPenultimateRow3();
+
+void test_swapPenultimateRow4();
+
+void test_countNonDescendingRowsMatrices();
+
 #endif //LABA5B_5D_TEST_MATRIX_TASKS_H

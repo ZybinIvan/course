@@ -303,24 +303,140 @@ void test_getNSpecialElement() {
     freeMemMatrix(m1);
 }
 
+void test_swapPenultimateRow() {
+    int a[] = {1, 2, 3,
+               4, 5, 6,
+               7, 8, 1};
+    matrix m1 = createMatrixFromArray(a, 3, 3);
+
+    int b[] = {1, 2, 3,
+               1, 4, 7,
+               7, 8, 1};
+    matrix m2 = createMatrixFromArray(b, 3, 3);
+
+    swapPenultimateRow(m1, 3);
+
+    assert(areTwoMatricesEqual(m1, m2));
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
+void test_swapPenultimateRow2() {
+    int a[] = {1, 2, 3, 4,
+               5, 6, 7, 8,
+               9, 10, 11, 12,
+               13, 14, 15, 16};
+    matrix m1 = createMatrixFromArray(a, 4, 4);
+
+    int b[] = {1, 2, 3, 4,
+               5, 6, 7, 8,
+               1, 5, 9, 13,
+               13, 14, 15, 16};
+    matrix m2 = createMatrixFromArray(b, 4, 4);
+
+    swapPenultimateRow(m1, 4);
+
+    assert(areTwoMatricesEqual(m1, m2));
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
+void test_swapPenultimateRow3() {
+    int a[] = {2, 1, 3,
+               5, 4, 6,
+               8, 7, 1};
+    matrix m1 = createMatrixFromArray(a, 3, 3);
+
+    int b[] = {2, 1, 3,
+               1, 4, 7,
+               8, 7, 1};
+    matrix m2 = createMatrixFromArray(b, 3, 3);
+
+    swapPenultimateRow(m1, 3);
+
+    assert(areTwoMatricesEqual(m1, m2));
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
+void test_swapPenultimateRow4() {
+    int a[] = {10, 2, 3, 4,
+               5, 6, 7, 8,
+               9, 10, 11, 12,
+               13, 14, 15, 16};
+    matrix m1 = createMatrixFromArray(a, 4, 4);
+
+    int b[] = {10, 2, 3, 4,
+               5, 6, 7, 8,
+               2, 6, 10, 14,
+               13, 14, 15, 16};
+    matrix m2 = createMatrixFromArray(b, 4, 4);
+
+    swapPenultimateRow(m1, 4);
+
+    assert(areTwoMatricesEqual(m1, m2));
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
+void test_countNonDescendingRowsMatrices() {
+    int a[] = {7, 1,
+               1, 1,
+
+               1, 6,
+               2, 2,
+
+               5, 4,
+               2, 3,
+
+               1, 3,
+               7, 9};
+    matrix *ms = createArrayOfMatrixFromArray(a, 4, 2, 2);
+
+    assert(countNonDescendingRowsMatrices(ms, 4) == 2);
+
+    freeMemMatrices(ms, 4);
+}
+
 void testsOfTasks() {
     test_swapRowsWithMaxAndMinElement();
+
     test_sortRowsByMaxElements();
     test_sortColsByMnElements();
+
     test_mulMatrices();
     test_mulMatrices2();
     test_mulMatrices3();
+
     test_getSquareOfMatrixIfSymmetric();
     test_getSquareOfMatrixIfSymmetric_notSymmetric();
+
     test_transposeIfMatrixHasNotEqualSumOfRows();
     test_transposeIfMatrixHasNotEqualSumOfRows2();
+
     test_isMutuallyInverseMatrices();
+
     test_findSumOfMaxesOfPseudoDiagonal();
     test_findSumOfMaxesOfPseudoDiagonal2();
+
     test_getMinInArea();
     test_getMinInArea2();
     test_getMinInArea3();
+
     test_sortByDistances();
+
     test_countEqClassesByRowsSum();
+
     test_getNSpecialElement();
+
+    test_swapPenultimateRow();
+    test_swapPenultimateRow2();
+    test_swapPenultimateRow3();
+    test_swapPenultimateRow4();
+
+    test_countNonDescendingRowsMatrices();
 }
