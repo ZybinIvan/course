@@ -69,4 +69,16 @@ bool isSpecialElement(const int *a, int n, int colIndex);
 
 int getNSpecialElement2(matrix m);
 
+double getScalarProduct(const int *a, const int *b, int n);
+
+double getVectorLength(const int *a, int n);
+
+double getCosine(int *a, int *b, int n);
+
+int getVectorIndexWithMaxAngle(matrix m, int *b);
+
+long long getScalarProductRowAndCol(matrix m, int i, int j);
+
+long long getSpecialScalarProduct(matrix m);
+
 #endif //LABA5B_5D_TASKS_H

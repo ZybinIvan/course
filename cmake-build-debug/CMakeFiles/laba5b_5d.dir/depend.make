@@ -17,6 +17,6 @@ CMakeFiles/laba5b_5d.dir/main.c.obj: \
  ../libs/algorithms/algorithms.h \
  ../libs/data_structures/matrix/matrix.h \
  ../libs/data_structures/matrix/tasks.h \
- ../libs/data_structures/tests/matrix/testFunctionsOfMatrix.h \
+ ../libs/data_structures/tests/matrix/test_matrix_functions.h \
  ../libs/data_structures/tests/matrix/test_matrix_tasks.h \
  ../main.c

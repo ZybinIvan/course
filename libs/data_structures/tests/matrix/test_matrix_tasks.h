@@ -56,4 +56,10 @@ void test_countNonDescendingRowsMatrices();
 
 void test_countZeroRows();
 
+void test_getNSpecialElement2();
+
+void test_getVectorIndexWithMaxAngle();
+
+void test_getSpecialScalarProduct();
+
 #endif //LABA5B_5D_TEST_MATRIX_TASKS_H

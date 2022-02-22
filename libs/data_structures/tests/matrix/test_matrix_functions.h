@@ -1,5 +1,5 @@
-#ifndef LABA5B_5D_TESTFUNCTIONSOFMATRIX_H
-#define LABA5B_5D_TESTFUNCTIONSOFMATRIX_H
+#ifndef LABA5B_5D_TEST_MATRIX_FUNCTIONS_H
+#define LABA5B_5D_TEST_MATRIX_FUNCTIONS_H
 
 #include "assert.h"
 #include "../../matrix/matrix.h"
@@ -38,4 +38,4 @@ void testMatrix();
 
 
 
-#endif //LABA5B_5D_TESTFUNCTIONSOFMATRIX_H
+#endif //LABA5B_5D_TEST_MATRIX_FUNCTIONS_H

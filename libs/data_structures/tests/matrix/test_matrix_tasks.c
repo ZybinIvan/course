@@ -437,6 +437,29 @@ void test_getNSpecialElement2() {
     freeMemMatrix(m1);
 }
 
+void test_getVectorIndexWithMaxAngle() {
+    int a[] = {2, 1};
+    int b[] = {1, 2,
+               -2, 2,
+               2, -2};
+    matrix m = createMatrixFromArray(b, 3, 2);
+
+    assert(getVectorIndexWithMaxAngle(m, a) == 1);
+
+    freeMemMatrix(m);
+}
+
+void test_getSpecialScalarProduct() {
+    int a[] = {1, 2, 3,
+               4, 5, 6,
+               7, 8, 9};
+    matrix m1 = createMatrixFromArray(a, 3, 3);
+
+    assert(getSpecialScalarProduct(m1) == 102);
+
+    freeMemMatrix(m1);
+}
+
 // ...........................
 
 void testsOfTasks() {
@@ -482,4 +505,8 @@ void testsOfTasks() {
     test_getMaxAbsF();
 
     test_getNSpecialElement2();
+
+    test_getVectorIndexWithMaxAngle();
+
+    test_getSpecialScalarProduct();
 }

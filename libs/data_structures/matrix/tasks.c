@@ -361,8 +361,59 @@ int getNSpecialElement2(matrix m) {
     int count = 0;
     for (int i = 0; i < m.nRows; ++i)
         for (int j = 0; j < m.nCols; ++j)
-            if(isSpecialElement(m.values[i], m.nCols, j))
+            if (isSpecialElement(m.values[i], m.nCols, j))
                 count++;
 
     return count;
+}
+
+// 17
+double getScalarProduct(const int *a, const int *b, int n) {
+    double scalarProduct  = 0;
+    for (int i = 0; i < n; ++i)
+        scalarProduct += a[i] * b[i];
+
+    return scalarProduct;
+}
+
+double getVectorLength(const int *a, int n) {
+    double length = 0;
+    for (int i = 0; i < n; ++i)
+        length += a[i] * a[i];
+
+    return sqrt(length);
+}
+
+double getCosine(int *a, int *b, int n) {
+    return getScalarProduct(a, b, n) / pow(getVectorLength(a, n), 2);
+}
+
+int getVectorIndexWithMaxAngle(matrix m, int *b) {
+    int maxAngleIndex = 0;
+    double minCosine = getCosine(m.values[0], b, m.nCols);
+    for (int i = 1; i < m.nRows; ++i) {
+        double cosine = getCosine(m.values[i], b, m.nCols);
+        if (cosine - minCosine < DBL_EPSILON) {
+            minCosine = cosine;
+            maxAngleIndex = i;
+        }
+    }
+
+    return maxAngleIndex;
+}
+
+// 18
+long long getScalarProductRowAndCol(matrix m, int i, int j) {
+    long long scalarProduct = 0;
+    for (int k = 0; k < m.nRows; ++k)
+        scalarProduct += m.values[i][k] * m.values[k][j];
+
+    return scalarProduct;
+}
+
+long long getSpecialScalarProduct(matrix m) {
+    position max = getMaxValuePos(m);
+    position min = getMinValuePos(m);
+
+    return getScalarProductRowAndCol(m, max.rowIndex, min.colIndex);
 }

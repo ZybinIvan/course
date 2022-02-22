@@ -117,18 +117,18 @@ libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOf
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.s"
 	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\vector\testFunctionsOfVector.c -o CMakeFiles\data_structures.dir\tests\vector\testFunctionsOfVector.c.s
 
-libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
-libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.obj: ../libs/data_structures/tests/matrix/testFunctionsOfMatrix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.obj"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\tests\matrix\testFunctionsOfMatrix.c.obj -c C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\testFunctionsOfMatrix.c
+libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
+libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.obj: ../libs/data_structures/tests/matrix/test_matrix_functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.obj"
+	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\tests\matrix\test_matrix_functions.c.obj -c C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\test_matrix_functions.c
 
-libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.i"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\testFunctionsOfMatrix.c > CMakeFiles\data_structures.dir\tests\matrix\testFunctionsOfMatrix.c.i
+libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.i"
+	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\test_matrix_functions.c > CMakeFiles\data_structures.dir\tests\matrix\test_matrix_functions.c.i
 
-libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.s"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\testFunctionsOfMatrix.c -o CMakeFiles\data_structures.dir\tests\matrix\testFunctionsOfMatrix.c.s
+libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.s"
+	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\test_matrix_functions.c -o CMakeFiles\data_structures.dir\tests\matrix\test_matrix_functions.c.s
 
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.obj: ../libs/data_structures/matrix/tasks.c
@@ -162,7 +162,7 @@ data_structures_OBJECTS = \
 "CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj" \
 "CMakeFiles/data_structures.dir/matrix/matrix.c.obj" \
 "CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.obj" \
-"CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.obj" \
+"CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.obj" \
 "CMakeFiles/data_structures.dir/matrix/tasks.c.obj" \
 "CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.obj"
 
@@ -173,7 +173,7 @@ libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.obj
-libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.obj
+libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/build.make
