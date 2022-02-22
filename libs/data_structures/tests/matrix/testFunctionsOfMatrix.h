@@ -2,9 +2,7 @@
 #define LABA5B_5D_TESTFUNCTIONSOFMATRIX_H
 
 #include "assert.h"
-#include "../../../matrix/matrix.h"
-
-long long getSum(int *a, int size);
+#include "../../matrix/matrix.h"
 
 void test_swapRows();
 

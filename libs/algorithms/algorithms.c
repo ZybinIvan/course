@@ -14,3 +14,10 @@ void swap(void *a, void *b, size_t bytes) {
         *pb = t;
     }
 }
+
+long long getSum(int *a, int size) {
+    long long sum = 0;
+    for (int i = 0; i < size; ++i)
+        sum += a[i];
+    return sum;
+}

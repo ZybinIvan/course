@@ -8,12 +8,6 @@
 
 C:/Projects/CLion/laba5b_5d/libs/algorithms/algorithms.h
 
-C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.c
-matrix.h
-C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.h
-../../algorithms/algorithms.h
-C:/Projects/CLion/laba5b_5d/libs/algorithms/algorithms.h
-
 C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.h
 stdio.h
 -
@@ -23,4 +17,18 @@ stdlib.h
 -
 stdbool.h
 -
+math.h
+-
+float.h
+-
+../../algorithms/algorithms.h
+C:/Projects/CLion/laba5b_5d/libs/algorithms/algorithms.h
+
+C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/tasks.c
+tasks.h
+C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/tasks.h
+
+C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/tasks.h
+matrix.h
+C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.h
 

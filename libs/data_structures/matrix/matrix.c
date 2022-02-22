@@ -4,7 +4,9 @@
 
 #include "matrix.h"
 
-#include "../../algorithms/algorithms.h"
+
+
+
 
 matrix getMemMatrix(int nRows, int nCols) {
     int **values = (int **) malloc(sizeof(int *) * nRows);
@@ -76,7 +78,7 @@ void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int))
     for (int i = 0; i < m.nRows; ++i)
         criteriaResults[i] = criteria(m.values[i], m.nCols);
 
-    for (int i = 0; i < m.nRows; ++i) {
+    for (int i = 1; i < m.nRows; ++i) {
         int t = criteriaResults[i];
         int j = i;
         while (j > 0 && criteriaResults[j - 1] > t) {
@@ -125,7 +127,8 @@ bool areTwoMatricesEqual(matrix m1, matrix m2) {
     for (int i = 0; i < m1.nRows; ++i) {
         for (int j = 0; j < m1.nCols; ++j)
             if (m1.values[i][j] != m2.values[i][j]) {
-                return false;}
+                return false;
+            }
     }
 
     return true;

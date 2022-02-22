@@ -2,7 +2,7 @@
 #define LABA5B_5D_TEST_MATRIX_TASKS_H
 
 #include "assert.h"
-#include "../../../matrix/tasks.h"
+#include "../../matrix/tasks.h"
 
 void test_swapRowsWithMaxAndMinElement();
 
@@ -38,5 +38,10 @@ void test_getMinInArea3();
 
 void testsOfTasks();
 
+void test_sortByDistances();
+
+void test_countEqClassesByRowsSum();
+
+void test_getNSpecialElement();
 
 #endif //LABA5B_5D_TEST_MATRIX_TASKS_H

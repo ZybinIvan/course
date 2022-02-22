@@ -14,7 +14,9 @@ CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.obj: \
  ../libs/data_structures/vector/vectorVoid.c \
  ../libs/data_structures/vector/vectorVoid.h
 CMakeFiles/laba5b_5d.dir/main.c.obj: \
+ ../libs/algorithms/algorithms.h \
  ../libs/data_structures/matrix/matrix.h \
  ../libs/data_structures/matrix/tasks.h \
- ../libs/data_structures/tests/matrix/matrix_tasks/test_matrix_tasks.h \
+ ../libs/data_structures/tests/matrix/testFunctionsOfMatrix.h \
+ ../libs/data_structures/tests/matrix/test_matrix_tasks.h \
  ../main.c

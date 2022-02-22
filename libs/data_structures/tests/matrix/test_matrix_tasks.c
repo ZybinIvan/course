@@ -262,6 +262,47 @@ void test_getMinInArea3() {
     freeMemMatrix(m1);
 }
 
+void test_sortByDistances() {
+    int a[] = {6, 5,
+               3, 4,
+               5, 2};
+    matrix m1 = createMatrixFromArray(a, 3, 2);
+    insertionSortRowsMatrixByRowCriteriaF(m1, getDistance);
+    int b[] = {3, 4,
+               5, 2,
+               6, 5};
+    matrix m2 = createMatrixFromArray(b, 3, 2);
+
+    assert(areTwoMatricesEqual(m1, m2));
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
+void test_countEqClassesByRowsSum() {
+    int a[] = {7, 1,
+               2, 7,
+               5, 4,
+               4, 3,
+               1, 6,
+               8, 0};
+    matrix m1 = createMatrixFromArray(a, 6, 2);
+    assert(countEqClassesByRowsSum(m1) == 3);
+
+    freeMemMatrix(m1);
+}
+
+void test_getNSpecialElement() {
+    int a[] = {3, 5, 5, 4,
+               2, 3, 6, 7,
+               12, 2, 1, 2};
+    matrix m1 = createMatrixFromArray(a, 3, 4);
+
+    assert(getNSpecialElement(m1) == 2);
+
+    freeMemMatrix(m1);
+}
+
 void testsOfTasks() {
     test_swapRowsWithMaxAndMinElement();
     test_sortRowsByMaxElements();
@@ -279,4 +320,7 @@ void testsOfTasks() {
     test_getMinInArea();
     test_getMinInArea2();
     test_getMinInArea3();
+    test_sortByDistances();
+    test_countEqClassesByRowsSum();
+    test_getNSpecialElement();
 }

@@ -8,12 +8,6 @@
 
 C:/Projects/CLion/laba5b_5d/libs/algorithms/algorithms.h
 
-C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.c
-matrix.h
-C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.h
-../../algorithms/algorithms.h
-C:/Projects/CLion/laba5b_5d/libs/algorithms/algorithms.h
-
 C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.h
 stdio.h
 -
@@ -23,4 +17,38 @@ stdlib.h
 -
 stdbool.h
 -
+math.h
+-
+float.h
+-
+../../algorithms/algorithms.h
+C:/Projects/CLion/laba5b_5d/libs/algorithms/algorithms.h
+
+C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/tasks.h
+matrix.h
+C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.h
+
+C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/testFunctionsOfMatrix.h
+assert.h
+C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/assert.h
+../../matrix/matrix.h
+C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.h
+
+C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/test_matrix_tasks.h
+assert.h
+C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/assert.h
+../../matrix/tasks.h
+C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/tasks.h
+
+C:/Projects/CLion/laba5b_5d/main.c
+stdio.h
+-
+libs/data_structures/matrix/matrix.h
+C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.h
+libs/data_structures/matrix/tasks.h
+C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/tasks.h
+libs/data_structures/tests/matrix/test_matrix_tasks.h
+C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/test_matrix_tasks.h
+libs/data_structures/tests/matrix/testFunctionsOfMatrix.h
+C:/Projects/CLion/laba5b_5d/libs/data_structures/tests/matrix/testFunctionsOfMatrix.h
 

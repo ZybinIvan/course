@@ -62,13 +62,6 @@ void getSquareOfMatrixIfSymmetric(matrix *m) {
 }
 
 // 5
-long long getSum(int *a, int size) {
-    long long sum = 0;
-    for (int i = 0; i < size; ++i)
-        sum += a[i];
-    return sum;
-}
-
 bool isUnique(long long *a, int n) {
     for (int i = 0; i < n; ++i)
         for (int j = i + 1; j < n; ++j)
@@ -154,3 +147,85 @@ int getMinInArea(matrix m) {
 }
 
 // 9
+float getDistance(int *a, int n) {
+    float sum = 0;
+    for (int i = 0; i < n; ++i)
+        sum += (float) (a[i] * a[i]);
+
+    return sqrtf(sum);
+}
+
+void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, int)) {
+    float *criteriaResults = (float *) malloc(sizeof(float) * m.nRows);
+    for (int i = 0; i < m.nRows; ++i)
+        criteriaResults[i] = criteria(m.values[i], m.nCols);
+
+    for (int i = 1; i < m.nRows; ++i) {
+        float t = criteriaResults[i];
+        int j = i;
+        while (j > 0 && criteriaResults[j - 1] - t > FLT_EPSILON) {
+            criteriaResults[j] = criteriaResults[j - 1];
+            swapRows(m, j, j - 1);
+            j--;
+        }
+        criteriaResults[j] = t;
+    }
+
+    free(criteriaResults);
+}
+
+void sortByDistances(matrix m) {
+    insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
+}
+
+// 10
+int cmp_long_long(const void *pa, const void *pb) {
+    long long *a = (long long *) pa;
+    long long *b = (long long *) pb;
+
+    return (int) (*a - *b);
+}
+
+int countNUnique(long long *a, int n) {
+    int count = 0;
+    for (int i = 1; i < n; ++i)
+        if (a[i] != a[i - 1])
+            count++;
+
+    return count + (n != 0);
+}
+
+int countEqClassesByRowsSum(matrix m) {
+    long long *rowsSums = (long long *) malloc(sizeof(long long) * m.nRows);
+    for (int i = 0; i < m.nRows; ++i)
+        rowsSums[i] = getSum(m.values[i], m.nCols);
+
+    qsort(rowsSums, m.nRows, sizeof(long long), cmp_long_long);
+    int count = countNUnique(rowsSums, m.nRows);
+
+    free(rowsSums);
+
+    return count;
+}
+
+// 11
+int getNSpecialElement(matrix m) {
+    long long *colSums = (long long *) calloc(m.nCols, sizeof(long long));
+    for (int i = 0; i < m.nCols; ++i)
+        for (int j = 0; j < m.nRows; ++j)
+            colSums[i] += m.values[j][i];
+
+    int count = 0;
+    for (int i = 0; i < m.nCols; ++i)
+        for (int j = 0; j < m.nRows; ++j)
+            if (m.values[j][i] > colSums[i] - m.values[j][i]) {
+                count++;
+                break;
+            }
+
+    free(colSums);
+
+    return count;
+}
+
+// 12

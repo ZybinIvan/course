@@ -1,11 +1,6 @@
 #include "testFunctionsOfMatrix.h"
 
-long long getSum(int *a, int size) {
-    long long sum = 0;
-    for (int i = 0; i < size; ++i)
-        sum += a[i];
-    return sum;
-}
+
 
 void test_swapRows() {
     int a[] = {1, 2,

@@ -177,53 +177,53 @@ matrix/tasks.c.s:
 	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.s
 .PHONY : matrix/tasks.c.s
 
-tests/matrix/matrix_tasks/test_matrix_tasks.obj: tests/matrix/matrix_tasks/test_matrix_tasks.c.obj
-.PHONY : tests/matrix/matrix_tasks/test_matrix_tasks.obj
+tests/matrix/testFunctionsOfMatrix.obj: tests/matrix/testFunctionsOfMatrix.c.obj
+.PHONY : tests/matrix/testFunctionsOfMatrix.obj
 
 # target to build an object file
-tests/matrix/matrix_tasks/test_matrix_tasks.c.obj:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/matrix_tasks/test_matrix_tasks.c.obj
-.PHONY : tests/matrix/matrix_tasks/test_matrix_tasks.c.obj
+tests/matrix/testFunctionsOfMatrix.c.obj:
+	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.obj
+.PHONY : tests/matrix/testFunctionsOfMatrix.c.obj
 
-tests/matrix/matrix_tasks/test_matrix_tasks.i: tests/matrix/matrix_tasks/test_matrix_tasks.c.i
-.PHONY : tests/matrix/matrix_tasks/test_matrix_tasks.i
+tests/matrix/testFunctionsOfMatrix.i: tests/matrix/testFunctionsOfMatrix.c.i
+.PHONY : tests/matrix/testFunctionsOfMatrix.i
 
 # target to preprocess a source file
-tests/matrix/matrix_tasks/test_matrix_tasks.c.i:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/matrix_tasks/test_matrix_tasks.c.i
-.PHONY : tests/matrix/matrix_tasks/test_matrix_tasks.c.i
+tests/matrix/testFunctionsOfMatrix.c.i:
+	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.i
+.PHONY : tests/matrix/testFunctionsOfMatrix.c.i
 
-tests/matrix/matrix_tasks/test_matrix_tasks.s: tests/matrix/matrix_tasks/test_matrix_tasks.c.s
-.PHONY : tests/matrix/matrix_tasks/test_matrix_tasks.s
+tests/matrix/testFunctionsOfMatrix.s: tests/matrix/testFunctionsOfMatrix.c.s
+.PHONY : tests/matrix/testFunctionsOfMatrix.s
 
 # target to generate assembly for a file
-tests/matrix/matrix_tasks/test_matrix_tasks.c.s:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/matrix_tasks/test_matrix_tasks.c.s
-.PHONY : tests/matrix/matrix_tasks/test_matrix_tasks.c.s
+tests/matrix/testFunctionsOfMatrix.c.s:
+	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/testFunctionsOfMatrix.c.s
+.PHONY : tests/matrix/testFunctionsOfMatrix.c.s
 
-tests/matrix/matrix_tests/testFunctionsOfMatrix.obj: tests/matrix/matrix_tests/testFunctionsOfMatrix.c.obj
-.PHONY : tests/matrix/matrix_tests/testFunctionsOfMatrix.obj
+tests/matrix/test_matrix_tasks.obj: tests/matrix/test_matrix_tasks.c.obj
+.PHONY : tests/matrix/test_matrix_tasks.obj
 
 # target to build an object file
-tests/matrix/matrix_tests/testFunctionsOfMatrix.c.obj:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/matrix_tests/testFunctionsOfMatrix.c.obj
-.PHONY : tests/matrix/matrix_tests/testFunctionsOfMatrix.c.obj
+tests/matrix/test_matrix_tasks.c.obj:
+	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.obj
+.PHONY : tests/matrix/test_matrix_tasks.c.obj
 
-tests/matrix/matrix_tests/testFunctionsOfMatrix.i: tests/matrix/matrix_tests/testFunctionsOfMatrix.c.i
-.PHONY : tests/matrix/matrix_tests/testFunctionsOfMatrix.i
+tests/matrix/test_matrix_tasks.i: tests/matrix/test_matrix_tasks.c.i
+.PHONY : tests/matrix/test_matrix_tasks.i
 
 # target to preprocess a source file
-tests/matrix/matrix_tests/testFunctionsOfMatrix.c.i:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/matrix_tests/testFunctionsOfMatrix.c.i
-.PHONY : tests/matrix/matrix_tests/testFunctionsOfMatrix.c.i
+tests/matrix/test_matrix_tasks.c.i:
+	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.i
+.PHONY : tests/matrix/test_matrix_tasks.c.i
 
-tests/matrix/matrix_tests/testFunctionsOfMatrix.s: tests/matrix/matrix_tests/testFunctionsOfMatrix.c.s
-.PHONY : tests/matrix/matrix_tests/testFunctionsOfMatrix.s
+tests/matrix/test_matrix_tasks.s: tests/matrix/test_matrix_tasks.c.s
+.PHONY : tests/matrix/test_matrix_tasks.s
 
 # target to generate assembly for a file
-tests/matrix/matrix_tests/testFunctionsOfMatrix.c.s:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/matrix_tests/testFunctionsOfMatrix.c.s
-.PHONY : tests/matrix/matrix_tests/testFunctionsOfMatrix.c.s
+tests/matrix/test_matrix_tasks.c.s:
+	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.s
+.PHONY : tests/matrix/test_matrix_tasks.c.s
 
 tests/vector/testFunctionsOfVector.obj: tests/vector/testFunctionsOfVector.c.obj
 .PHONY : tests/vector/testFunctionsOfVector.obj
@@ -312,12 +312,12 @@ help:
 	@echo ... matrix/tasks.obj
 	@echo ... matrix/tasks.i
 	@echo ... matrix/tasks.s
-	@echo ... tests/matrix/matrix_tasks/test_matrix_tasks.obj
-	@echo ... tests/matrix/matrix_tasks/test_matrix_tasks.i
-	@echo ... tests/matrix/matrix_tasks/test_matrix_tasks.s
-	@echo ... tests/matrix/matrix_tests/testFunctionsOfMatrix.obj
-	@echo ... tests/matrix/matrix_tests/testFunctionsOfMatrix.i
-	@echo ... tests/matrix/matrix_tests/testFunctionsOfMatrix.s
+	@echo ... tests/matrix/testFunctionsOfMatrix.obj
+	@echo ... tests/matrix/testFunctionsOfMatrix.i
+	@echo ... tests/matrix/testFunctionsOfMatrix.s
+	@echo ... tests/matrix/test_matrix_tasks.obj
+	@echo ... tests/matrix/test_matrix_tasks.i
+	@echo ... tests/matrix/test_matrix_tasks.s
 	@echo ... tests/vector/testFunctionsOfVector.obj
 	@echo ... tests/vector/testFunctionsOfVector.i
 	@echo ... tests/vector/testFunctionsOfVector.s

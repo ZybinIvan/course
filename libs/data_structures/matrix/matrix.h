@@ -9,6 +9,10 @@
 #include <malloc.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <math.h>
+#include <float.h>
+
+#include "../../algorithms/algorithms.h"
 
 typedef struct matrix {
     int **values;
@@ -20,6 +24,7 @@ typedef struct position {
     int rowIndex;
     int colIndex;
 } position;
+
 
 matrix getMemMatrix(int nRows, int nCols);
 

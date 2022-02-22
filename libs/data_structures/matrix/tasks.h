@@ -17,8 +17,6 @@ matrix mulMatrices(matrix m1, matrix m2);
 
 void getSquareOfMatrixIfSymmetric(matrix *m);
 
-long long getSum(int *a, int size);
-
 bool isUnique(long long *a, int n);
 
 void transposeIfMatrixHasNotEqualSumOfRows(matrix m);
@@ -33,8 +31,18 @@ int min2(int a, int b);
 
 int getMinInArea(matrix m);
 
+float getDistance(int *a, int n);
 
+void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, int));
 
+void sortByDistances(matrix m);
 
+int cmp_long_long(const void *pa, const void *pb);
+
+int countNUnique(long long *a, int n);
+
+int countEqClassesByRowsSum(matrix m);
+
+int getNSpecialElement(matrix m);
 
 #endif //LABA5B_5D_TASKS_H
