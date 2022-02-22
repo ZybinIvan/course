@@ -402,6 +402,31 @@ void test_countNonDescendingRowsMatrices() {
     freeMemMatrices(ms, 4);
 }
 
+void test_countZeroRows() {
+    int a[] = {0, 0, 0,
+               0, 0, 1,
+               2, 0, 3};
+    matrix m1 = createMatrixFromArray(a, 3, 3);
+
+
+    assert(countZeroRows(m1) == 1);
+
+    freeMemMatrix(m1);
+}
+
+void test_getMaxAbsF() {
+    float a[] = {1.23f, 1.23787f,
+                 0, 19,
+                 18.99f, 15};
+    matrixF m = createFMatrixFromArray(a, 3, 2);
+
+    assert(fabsf(getMaxAbsF(m) - 19) < FLT_EPSILON);
+
+    freeMemMatrixF(m);
+}
+
+// ...........................
+
 void testsOfTasks() {
     test_swapRowsWithMaxAndMinElement();
 
@@ -439,4 +464,8 @@ void testsOfTasks() {
     test_swapPenultimateRow4();
 
     test_countNonDescendingRowsMatrices();
+
+    test_countZeroRows();
+
+    test_getMaxAbsF();
 }

@@ -20,6 +20,12 @@ typedef struct matrix {
     int nCols;
 } matrix;
 
+typedef struct matrixF {
+    float **values;
+    int nRows;
+    int nCols;
+} matrixF;
+
 typedef struct position {
     int rowIndex;
     int colIndex;
@@ -67,5 +73,9 @@ position getMaxValuePos(matrix m);
 matrix createMatrixFromArray(const int *a, size_t nRows, size_t nCols);
 
 matrix *createArrayOfMatrixFromArray(const int *values, int nMatrices, int nRows, int nCols);
+
+matrixF createFMatrixFromArray(const float *a, int nRows, int nCols);
+
+void freeMemMatrixF(matrixF m);
 
 #endif //LABA5B_MATRIX_H

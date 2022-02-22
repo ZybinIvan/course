@@ -1,11 +1,4 @@
-//
-// Created by Иван on 14.02.2022.
-//
-
 #include "matrix.h"
-
-
-
 
 
 matrix getMemMatrix(int nRows, int nCols) {
@@ -127,8 +120,6 @@ bool areTwoMatricesEqual(matrix m1, matrix m2) {
     for (int i = 0; i < m1.nRows; ++i) {
         for (int j = 0; j < m1.nCols; ++j)
             if (m1.values[i][j] != m2.values[i][j]) {
-                int k1 = m1.values[i][j];
-                int k2 = m2.values[i][j];
                 return false;
             }
     }
@@ -216,4 +207,28 @@ matrix *createArrayOfMatrixFromArray(const int *values, int nMatrices, int nRows
                 ms[k].values[i][j] = values[l++];
 
     return ms;
+}
+
+matrixF getMemMatrixF(int nRows, int nCols) {
+    float **values = (float **) malloc(sizeof(float *) * nRows);
+    for (int i = 0; i < nRows; ++i)
+        values[i] = (float *) malloc(sizeof(float) * nCols);
+    return (matrixF) {values, nRows, nCols};
+}
+
+matrixF createFMatrixFromArray(const float *a, int nRows, int nCols) {
+    matrixF m = getMemMatrixF(nRows, nCols);
+
+    int k = 0;
+    for (int i = 0; i < nRows; ++i)
+        for (int j = 0; j < nCols; ++j)
+            m.values[i][j] = a[k++];
+
+    return m;
+}
+
+void freeMemMatrixF(matrixF m) {
+    for (int i = 0; i < m.nRows; ++i)
+        free(m.values[i]);
+    free(m.values);
 }

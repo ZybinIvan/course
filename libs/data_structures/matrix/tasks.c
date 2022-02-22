@@ -274,3 +274,55 @@ int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
 
     return count;
 }
+
+// 14
+int countValues(const int *a, int n, int value) {
+    int count = 0;
+    for (int i = 0; i < n; ++i)
+        if (a[i] == value)
+            count++;
+
+    return count;
+}
+
+int countZeroRows(matrix m) {
+    int count = 0;
+    for (int i = 0; i < m.nRows; ++i)
+        if (countValues(m.values[i], m.nCols, 0) == m.nCols)
+            count++;
+
+    return count;
+}
+
+void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
+    int *zeroRowsInMatrix = (int *) malloc(sizeof(int) * nMatrix);
+
+    int max = countZeroRows(ms[0]);
+    zeroRowsInMatrix[0] = max;
+
+    for (int i = 1; i < nMatrix; ++i) {
+        zeroRowsInMatrix[i] = countZeroRows(ms[i]);
+        if (zeroRowsInMatrix[i] > max)
+            max = zeroRowsInMatrix[i];
+    }
+
+    for (int i = 0; i < nMatrix; ++i)
+        if(zeroRowsInMatrix[i] == max)
+            outputMatrix(ms[i]);
+
+    free(zeroRowsInMatrix);
+}
+
+// 15
+float getMaxAbsF(matrixF m) {
+    float max = fabsf(m.values[0][0]);
+
+    for (int i = 0; i < m.nRows; ++i)
+        for (int j = 1; j < m.nCols; ++j) {
+            float x = fabsf(m.values[i][j]);
+            if (x - max > FLT_EPSILON)
+                max = x;
+        }
+
+    return max;
+}

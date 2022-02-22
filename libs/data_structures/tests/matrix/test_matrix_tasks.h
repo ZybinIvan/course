@@ -54,4 +54,6 @@ void test_swapPenultimateRow4();
 
 void test_countNonDescendingRowsMatrices();
 
+void test_countZeroRows();
+
 #endif //LABA5B_5D_TEST_MATRIX_TASKS_H
