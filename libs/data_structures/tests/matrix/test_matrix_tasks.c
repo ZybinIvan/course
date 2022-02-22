@@ -425,6 +425,18 @@ void test_getMaxAbsF() {
     freeMemMatrixF(m);
 }
 
+void test_getNSpecialElement2() {
+    int a[] = {2, 3, 5, 5, 4,
+               6, 2, 3, 8, 12,
+               12, 12, 2, 1, 2};
+    matrix m1 = createMatrixFromArray(a, 3, 5);
+
+
+    assert(getNSpecialElement2(m1) == 4);
+
+    freeMemMatrix(m1);
+}
+
 // ...........................
 
 void testsOfTasks() {
@@ -468,4 +480,6 @@ void testsOfTasks() {
     test_countZeroRows();
 
     test_getMaxAbsF();
+
+    test_getNSpecialElement2();
 }

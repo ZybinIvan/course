@@ -74,8 +74,16 @@ matrix createMatrixFromArray(const int *a, size_t nRows, size_t nCols);
 
 matrix *createArrayOfMatrixFromArray(const int *values, int nMatrices, int nRows, int nCols);
 
+matrixF getMemMatrixF(int nRows, int nCols);
+
+matrixF *getMemArrayOfMatricesF(int nMatrices, int nRows, int nCols);
+
 matrixF createFMatrixFromArray(const float *a, int nRows, int nCols);
 
 void freeMemMatrixF(matrixF m);
+
+void outputMatrixF(matrixF m);
+
+matrixF *createArrayOfMatrixFromArrayF(const float *values, int nMatrices, int nRows, int nCols);
 
 #endif //LABA5B_MATRIX_H

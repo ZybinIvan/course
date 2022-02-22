@@ -63,4 +63,10 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix);
 
 float getMaxAbsF(matrixF m);
 
+void printMatricesWithMinimumNorm(matrixF *ms, int nMatrix, float (*norm) (matrixF));
+
+bool isSpecialElement(const int *a, int n, int colIndex);
+
+int getNSpecialElement2(matrix m);
+
 #endif //LABA5B_5D_TASKS_H

@@ -213,7 +213,16 @@ matrixF getMemMatrixF(int nRows, int nCols) {
     float **values = (float **) malloc(sizeof(float *) * nRows);
     for (int i = 0; i < nRows; ++i)
         values[i] = (float *) malloc(sizeof(float) * nCols);
+
     return (matrixF) {values, nRows, nCols};
+}
+
+matrixF *getMemArrayOfMatricesF(int nMatrices, int nRows, int nCols) {
+    matrixF *ms = (matrixF *) malloc(sizeof(matrixF) * nMatrices);
+    for (int i = 0; i < nMatrices; ++i)
+        ms[i] = getMemMatrixF(nRows, nCols);
+
+    return ms;
 }
 
 matrixF createFMatrixFromArray(const float *a, int nRows, int nCols) {
@@ -231,4 +240,24 @@ void freeMemMatrixF(matrixF m) {
     for (int i = 0; i < m.nRows; ++i)
         free(m.values[i]);
     free(m.values);
+}
+
+void outputMatrixF(matrixF m) {
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j)
+            printf("%f ", m.values[i][j]);
+        printf("\n");
+    }
+    printf("\n");
+}
+
+matrixF *createArrayOfMatrixFromArrayF(const float *values, int nMatrices, int nRows, int nCols) {
+    matrixF *ms = getMemArrayOfMatricesF(nMatrices, nRows, nCols);
+    int l = 0;
+    for (int k = 0; k < nMatrices; k++)
+        for (int i = 0; i < nRows; i++)
+            for (int j = 0; j < nCols; j++)
+                ms[k].values[i][j] = values[l++];
+
+    return ms;
 }

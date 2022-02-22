@@ -307,7 +307,7 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
     }
 
     for (int i = 0; i < nMatrix; ++i)
-        if(zeroRowsInMatrix[i] == max)
+        if (zeroRowsInMatrix[i] == max)
             outputMatrix(ms[i]);
 
     free(zeroRowsInMatrix);
@@ -318,11 +318,51 @@ float getMaxAbsF(matrixF m) {
     float max = fabsf(m.values[0][0]);
 
     for (int i = 0; i < m.nRows; ++i)
-        for (int j = 1; j < m.nCols; ++j) {
+        for (int j = 0; j < m.nCols; ++j) {
             float x = fabsf(m.values[i][j]);
             if (x - max > FLT_EPSILON)
                 max = x;
         }
 
     return max;
+}
+
+void printMatricesWithMinimumNorm(matrixF *ms, int nMatrix, float (*norm)(matrixF)) {
+    float *norms = (float *) malloc(sizeof(float) * nMatrix);
+    float min = getMaxAbsF(ms[0]);
+    norms[0] = min;
+    for (int i = 1; i < nMatrix; ++i) {
+        norms[i] = getMaxAbsF(ms[i]);
+        if (norms[i] < min)
+            min = norms[i];
+    }
+
+    for (int i = 0; i < nMatrix; ++i)
+        if (norms[i] == min)
+            outputMatrixF(ms[i]);
+
+    free(norms);
+}
+
+// 16
+bool isSpecialElement(const int *a, int n, int colIndex) {
+    for (int i = 0; i < colIndex; i++)
+        if (a[colIndex] <= a[i])
+            return false;
+
+    for (int i = colIndex + 1; i < n; i++)
+        if (a[colIndex] >= a[i])
+            return false;
+
+    return true;
+}
+
+int getNSpecialElement2(matrix m) {
+    int count = 0;
+    for (int i = 0; i < m.nRows; ++i)
+        for (int j = 0; j < m.nCols; ++j)
+            if(isSpecialElement(m.values[i], m.nCols, j))
+                count++;
+
+    return count;
 }
