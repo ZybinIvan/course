@@ -250,6 +250,30 @@ libs/data_structures/vector/vectorVoid.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.s
 .PHONY : libs/data_structures/vector/vectorVoid.c.s
 
+libs/string/string_.obj: libs/string/string_.c.obj
+.PHONY : libs/string/string_.obj
+
+# target to build an object file
+libs/string/string_.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/string_.c.obj
+.PHONY : libs/string/string_.c.obj
+
+libs/string/string_.i: libs/string/string_.c.i
+.PHONY : libs/string/string_.i
+
+# target to preprocess a source file
+libs/string/string_.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/string_.c.i
+.PHONY : libs/string/string_.c.i
+
+libs/string/string_.s: libs/string/string_.c.s
+.PHONY : libs/string/string_.s
+
+# target to generate assembly for a file
+libs/string/string_.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/string_.c.s
+.PHONY : libs/string/string_.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -297,6 +321,9 @@ help:
 	@echo ... libs/data_structures/vector/vectorVoid.obj
 	@echo ... libs/data_structures/vector/vectorVoid.i
 	@echo ... libs/data_structures/vector/vectorVoid.s
+	@echo ... libs/string/string_.obj
+	@echo ... libs/string/string_.i
+	@echo ... libs/string/string_.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

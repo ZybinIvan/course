@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/data_structures/matrix/matrix.c.obj"
   "C:/Projects/CLion/laba5b_5d/libs/data_structures/vector/vector.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vector.c.obj"
   "C:/Projects/CLion/laba5b_5d/libs/data_structures/vector/vectorVoid.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.obj"
+  "C:/Projects/CLion/laba5b_5d/libs/string/string_.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/string_.c.obj"
   "C:/Projects/CLion/laba5b_5d/main.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

@@ -198,6 +198,12 @@
 		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/data_structures/vector/vectorVoid.h">
 			<Option target="laba5b_5d"/>
 		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/string/string_.c">
+			<Option target="laba5b_5d"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/string/string_.h">
+			<Option target="laba5b_5d"/>
+		</Unit>
 		<Unit filename="C:/Projects/CLion/laba5b_5d/main.c">
 			<Option target="laba5b_5d"/>
 		</Unit>

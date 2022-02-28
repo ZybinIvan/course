@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/laba5b_5d.dir/libs/data_structures/matrix/matrix.c.obj"
   "CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vector.c.obj"
   "CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.obj"
+  "CMakeFiles/laba5b_5d.dir/libs/string/string_.c.obj"
   "CMakeFiles/laba5b_5d.dir/main.c.obj"
   "laba5b_5d.exe"
   "laba5b_5d.exe.manifest"

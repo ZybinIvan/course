@@ -13,6 +13,9 @@ CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vector.c.obj: \
 CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.obj: \
  ../libs/data_structures/vector/vectorVoid.c \
  ../libs/data_structures/vector/vectorVoid.h
+CMakeFiles/laba5b_5d.dir/libs/string/string_.c.obj: \
+ ../libs/string/string_.c \
+ ../libs/string/string_.h
 CMakeFiles/laba5b_5d.dir/main.c.obj: \
  ../libs/algorithms/algorithms.h \
  ../libs/data_structures/matrix/matrix.h \
