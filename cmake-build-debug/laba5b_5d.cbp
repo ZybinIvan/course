@@ -204,6 +204,24 @@
 		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/string/string_.h">
 			<Option target="laba5b_5d"/>
 		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/string/tasks/removeNonLetters.c">
+			<Option target="laba5b_5d"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/string/tasks/removeNonLetters.h">
+			<Option target="laba5b_5d"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/tests/test_string.c">
+			<Option target="laba5b_5d"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/tests/test_string.h">
+			<Option target="laba5b_5d"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/tests/test_string_tasks.c">
+			<Option target="laba5b_5d"/>
+		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d/libs/tests/test_string_tasks.h">
+			<Option target="laba5b_5d"/>
+		</Unit>
 		<Unit filename="C:/Projects/CLion/laba5b_5d/main.c">
 			<Option target="laba5b_5d"/>
 		</Unit>

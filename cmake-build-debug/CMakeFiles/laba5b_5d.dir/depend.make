@@ -16,10 +16,11 @@ CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.obj: \
 CMakeFiles/laba5b_5d.dir/libs/string/string_.c.obj: \
  ../libs/string/string_.c \
  ../libs/string/string_.h
+CMakeFiles/laba5b_5d.dir/libs/tests/test_string.c.obj: \
+ ../libs/string/string_.h \
+ ../libs/tests/test_string.c \
+ ../libs/tests/test_string.h
 CMakeFiles/laba5b_5d.dir/main.c.obj: \
- ../libs/algorithms/algorithms.h \
- ../libs/data_structures/matrix/matrix.h \
- ../libs/data_structures/matrix/tasks.h \
- ../libs/data_structures/tests/matrix/test_matrix_functions.h \
- ../libs/data_structures/tests/matrix/test_matrix_tasks.h \
+ ../libs/string/string_.h \
+ ../libs/tests/test_string.h \
  ../main.c
