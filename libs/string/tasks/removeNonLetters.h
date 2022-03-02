@@ -3,10 +3,6 @@
 
 #include "../string_.h"
 
-void removeNonLetters(char *s) {
-    char *endSource = getEndOfString(s);
-    char *destination = copyIf(s, endSource, s, isgraph);
-    *destination = '\0';
-}
+void removeNonLetters(char *s);
 
-#endif //LABA5B_5D_REMOVENONLETTERS_H
+#endif

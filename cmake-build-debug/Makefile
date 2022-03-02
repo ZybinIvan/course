@@ -274,77 +274,77 @@ libs/string/string_.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/string_.c.s
 .PHONY : libs/string/string_.c.s
 
-libs/string/tasks/removeNonLetters.obj: libs/string/tasks/removeNonLetters.c.obj
-.PHONY : libs/string/tasks/removeNonLetters.obj
+libs/string/tasks/removeNonLetter.obj: libs/string/tasks/removeNonLetter.c.obj
+.PHONY : libs/string/tasks/removeNonLetter.obj
 
 # target to build an object file
-libs/string/tasks/removeNonLetters.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tasks/removeNonLetters.c.obj
-.PHONY : libs/string/tasks/removeNonLetters.c.obj
+libs/string/tasks/removeNonLetter.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tasks/removeNonLetter.c.obj
+.PHONY : libs/string/tasks/removeNonLetter.c.obj
 
-libs/string/tasks/removeNonLetters.i: libs/string/tasks/removeNonLetters.c.i
-.PHONY : libs/string/tasks/removeNonLetters.i
+libs/string/tasks/removeNonLetter.i: libs/string/tasks/removeNonLetter.c.i
+.PHONY : libs/string/tasks/removeNonLetter.i
 
 # target to preprocess a source file
-libs/string/tasks/removeNonLetters.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tasks/removeNonLetters.c.i
-.PHONY : libs/string/tasks/removeNonLetters.c.i
+libs/string/tasks/removeNonLetter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tasks/removeNonLetter.c.i
+.PHONY : libs/string/tasks/removeNonLetter.c.i
 
-libs/string/tasks/removeNonLetters.s: libs/string/tasks/removeNonLetters.c.s
-.PHONY : libs/string/tasks/removeNonLetters.s
+libs/string/tasks/removeNonLetter.s: libs/string/tasks/removeNonLetter.c.s
+.PHONY : libs/string/tasks/removeNonLetter.s
 
 # target to generate assembly for a file
-libs/string/tasks/removeNonLetters.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tasks/removeNonLetters.c.s
-.PHONY : libs/string/tasks/removeNonLetters.c.s
+libs/string/tasks/removeNonLetter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tasks/removeNonLetter.c.s
+.PHONY : libs/string/tasks/removeNonLetter.c.s
 
-libs/tests/test_string.obj: libs/tests/test_string.c.obj
-.PHONY : libs/tests/test_string.obj
+libs/string/tests/test_string.obj: libs/string/tests/test_string.c.obj
+.PHONY : libs/string/tests/test_string.obj
 
 # target to build an object file
-libs/tests/test_string.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/tests/test_string.c.obj
-.PHONY : libs/tests/test_string.c.obj
+libs/string/tests/test_string.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string.c.obj
+.PHONY : libs/string/tests/test_string.c.obj
 
-libs/tests/test_string.i: libs/tests/test_string.c.i
-.PHONY : libs/tests/test_string.i
+libs/string/tests/test_string.i: libs/string/tests/test_string.c.i
+.PHONY : libs/string/tests/test_string.i
 
 # target to preprocess a source file
-libs/tests/test_string.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/tests/test_string.c.i
-.PHONY : libs/tests/test_string.c.i
+libs/string/tests/test_string.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string.c.i
+.PHONY : libs/string/tests/test_string.c.i
 
-libs/tests/test_string.s: libs/tests/test_string.c.s
-.PHONY : libs/tests/test_string.s
+libs/string/tests/test_string.s: libs/string/tests/test_string.c.s
+.PHONY : libs/string/tests/test_string.s
 
 # target to generate assembly for a file
-libs/tests/test_string.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/tests/test_string.c.s
-.PHONY : libs/tests/test_string.c.s
+libs/string/tests/test_string.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string.c.s
+.PHONY : libs/string/tests/test_string.c.s
 
-libs/tests/test_string_tasks.obj: libs/tests/test_string_tasks.c.obj
-.PHONY : libs/tests/test_string_tasks.obj
+libs/string/tests/test_string_tasks.obj: libs/string/tests/test_string_tasks.c.obj
+.PHONY : libs/string/tests/test_string_tasks.obj
 
 # target to build an object file
-libs/tests/test_string_tasks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/tests/test_string_tasks.c.obj
-.PHONY : libs/tests/test_string_tasks.c.obj
+libs/string/tests/test_string_tasks.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string_tasks.c.obj
+.PHONY : libs/string/tests/test_string_tasks.c.obj
 
-libs/tests/test_string_tasks.i: libs/tests/test_string_tasks.c.i
-.PHONY : libs/tests/test_string_tasks.i
+libs/string/tests/test_string_tasks.i: libs/string/tests/test_string_tasks.c.i
+.PHONY : libs/string/tests/test_string_tasks.i
 
 # target to preprocess a source file
-libs/tests/test_string_tasks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/tests/test_string_tasks.c.i
-.PHONY : libs/tests/test_string_tasks.c.i
+libs/string/tests/test_string_tasks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string_tasks.c.i
+.PHONY : libs/string/tests/test_string_tasks.c.i
 
-libs/tests/test_string_tasks.s: libs/tests/test_string_tasks.c.s
-.PHONY : libs/tests/test_string_tasks.s
+libs/string/tests/test_string_tasks.s: libs/string/tests/test_string_tasks.c.s
+.PHONY : libs/string/tests/test_string_tasks.s
 
 # target to generate assembly for a file
-libs/tests/test_string_tasks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/tests/test_string_tasks.c.s
-.PHONY : libs/tests/test_string_tasks.c.s
+libs/string/tests/test_string_tasks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5b_5d.dir\build.make CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string_tasks.c.s
+.PHONY : libs/string/tests/test_string_tasks.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -396,15 +396,15 @@ help:
 	@echo ... libs/string/string_.obj
 	@echo ... libs/string/string_.i
 	@echo ... libs/string/string_.s
-	@echo ... libs/string/tasks/removeNonLetters.obj
-	@echo ... libs/string/tasks/removeNonLetters.i
-	@echo ... libs/string/tasks/removeNonLetters.s
-	@echo ... libs/tests/test_string.obj
-	@echo ... libs/tests/test_string.i
-	@echo ... libs/tests/test_string.s
-	@echo ... libs/tests/test_string_tasks.obj
-	@echo ... libs/tests/test_string_tasks.i
-	@echo ... libs/tests/test_string_tasks.s
+	@echo ... libs/string/tasks/removeNonLetter.obj
+	@echo ... libs/string/tasks/removeNonLetter.i
+	@echo ... libs/string/tasks/removeNonLetter.s
+	@echo ... libs/string/tests/test_string.obj
+	@echo ... libs/string/tests/test_string.i
+	@echo ... libs/string/tests/test_string.s
+	@echo ... libs/string/tests/test_string_tasks.obj
+	@echo ... libs/string/tests/test_string_tasks.i
+	@echo ... libs/string/tests/test_string_tasks.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

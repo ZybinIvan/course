@@ -63,8 +63,8 @@ void test_strcmp() {
     char s3[] = "123\0";
     char s4[] = "42\0";
 
-    assert(strcmp(s1, s2) == 0 && strcmp(s3, s4) < 0);
-    assert(strcmp(s1, s3) > 0 && strcmp(s1, s4) > 0);
+    assert(strcmp_(s1, s2) == 0 && strcmp_(s3, s4) < 0);
+    assert(strcmp_(s1, s3) > 0 && strcmp_(s1, s4) > 0);
 }
 
 void test_copy() {
@@ -74,7 +74,7 @@ void test_copy() {
     char *end = copy(s1, s1 + 4, s2);
     *end = '\0';
 
-    assert(strcmp(s1, s2) == 0);
+    assert(strcmp_(s1, s2) == 0);
 }
 
 int isGraph(int symbol) {
@@ -89,7 +89,7 @@ void test_copyIf() {
     char *end = copyIf(s1, s1 + 6, s2, isGraph);
     *end = '\0';
 
-    assert(strcmp(s3, s2) == 0);
+    assert(strcmp_(s3, s2) == 0);
 }
 
 // общий тест

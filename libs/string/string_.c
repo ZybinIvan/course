@@ -43,7 +43,7 @@ char *findSpaceReverse(char *rbegin, const char *rend) {
     return rbegin;
 }
 
-int strcmp(const char *lhs, const char *rhs) {
+int strcmp_(const char *lhs, const char *rhs) {
     while (*lhs && *rhs && *lhs == *rhs) {
         lhs++;
         rhs++;
@@ -81,6 +81,6 @@ char *copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDesti
     return beginDestination;
 }
 
-char* getEndOfString(char *s) {
+char *getEndOfString(char *s) {
     return s + strlen_(s);
 }

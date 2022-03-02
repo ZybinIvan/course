@@ -1,7 +1,7 @@
 #ifndef LABA5B_5D_TEST_STRING_H
 #define LABA5B_5D_TEST_STRING_H
 
-#include "../string/string_.h"
+#include "../string_.h"
 
 void test_strlen_();
 

@@ -14,13 +14,19 @@ ctype.h
 memory.h
 -
 
-C:/Projects/CLion/laba5b_5d/libs/tests/test_string.c
-assert.h
-C:/Projects/CLion/laba5b_5d/libs/tests/assert.h
-test_string.h
-C:/Projects/CLion/laba5b_5d/libs/tests/test_string.h
+C:/Projects/CLion/laba5b_5d/libs/string/tasks/removeNonLetters.h
+../string_.h
+C:/Projects/CLion/laba5b_5d/libs/string/string_.h
 
-C:/Projects/CLion/laba5b_5d/libs/tests/test_string.h
-../string/string_.h
+C:/Projects/CLion/laba5b_5d/libs/string/tests/test_string_tasks.c
+test_string_tasks.h
+C:/Projects/CLion/laba5b_5d/libs/string/tests/test_string_tasks.h
+../string_.h
+C:/Projects/CLion/laba5b_5d/libs/string/string_.h
+
+C:/Projects/CLion/laba5b_5d/libs/string/tests/test_string_tasks.h
+../tasks/removeNonLetters.h
+C:/Projects/CLion/laba5b_5d/libs/string/tasks/removeNonLetters.h
+../string_.h
 C:/Projects/CLion/laba5b_5d/libs/string/string_.h
 

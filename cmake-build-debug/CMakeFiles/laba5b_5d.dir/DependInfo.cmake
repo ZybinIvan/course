@@ -13,9 +13,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Projects/CLion/laba5b_5d/libs/data_structures/vector/vector.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vector.c.obj"
   "C:/Projects/CLion/laba5b_5d/libs/data_structures/vector/vectorVoid.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.obj"
   "C:/Projects/CLion/laba5b_5d/libs/string/string_.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/string_.c.obj"
-  "C:/Projects/CLion/laba5b_5d/libs/string/tasks/removeNonLetters.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/tasks/removeNonLetters.c.obj"
-  "C:/Projects/CLion/laba5b_5d/libs/tests/test_string.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/tests/test_string.c.obj"
-  "C:/Projects/CLion/laba5b_5d/libs/tests/test_string_tasks.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/tests/test_string_tasks.c.obj"
+  "C:/Projects/CLion/laba5b_5d/libs/string/tasks/removeNonLetter.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/tasks/removeNonLetter.c.obj"
+  "C:/Projects/CLion/laba5b_5d/libs/string/tests/test_string.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string.c.obj"
+  "C:/Projects/CLion/laba5b_5d/libs/string/tests/test_string_tasks.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string_tasks.c.obj"
   "C:/Projects/CLion/laba5b_5d/main.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
