@@ -77,16 +77,12 @@ void test_copy() {
     assert(strcmp_(s1, s2) == 0);
 }
 
-int isGraph(int symbol) {
-    return !isspace(symbol);
-}
-
 void test_copyIf() {
     char s1[] = " mai n\0";
     char s2[5];
     char s3[] = "main\0";
 
-    char *end = copyIf(s1, s1 + 6, s2, isGraph);
+    char *end = copyIf(s1, s1 + 6, s2, isgraph);
     *end = '\0';
 
     assert(strcmp_(s3, s2) == 0);

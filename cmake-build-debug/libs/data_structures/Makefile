@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projects\CLion\laba5b_5d
+CMAKE_SOURCE_DIR = C:\Projects\CLion\laba5b_5d_5e
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projects\CLion\laba5b_5d\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures\\CMakeFiles\progress.marks
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\CMakeFiles C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures\\CMakeFiles\progress.marks
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/clean
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/preinstall
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/preinstall
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libs/data_structures/CMakeFiles/data_structures.dir/rule:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/CMakeFiles/data_structures.dir/rule
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/CMakeFiles/data_structures.dir/rule
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ data_structures: libs/data_structures/CMakeFiles/data_structures.dir/rule
 
 # fast build rule for target.
 data_structures/fast:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
 matrix/matrix.obj: matrix/matrix.c.obj
@@ -134,7 +134,7 @@ matrix/matrix.obj: matrix/matrix.c.obj
 
 # target to build an object file
 matrix/matrix.c.obj:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj
 .PHONY : matrix/matrix.c.obj
 
 matrix/matrix.i: matrix/matrix.c.i
@@ -142,7 +142,7 @@ matrix/matrix.i: matrix/matrix.c.i
 
 # target to preprocess a source file
 matrix/matrix.c.i:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.i
 .PHONY : matrix/matrix.c.i
 
 matrix/matrix.s: matrix/matrix.c.s
@@ -150,7 +150,7 @@ matrix/matrix.s: matrix/matrix.c.s
 
 # target to generate assembly for a file
 matrix/matrix.c.s:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.s
 .PHONY : matrix/matrix.c.s
 
 matrix/tasks.obj: matrix/tasks.c.obj
@@ -158,7 +158,7 @@ matrix/tasks.obj: matrix/tasks.c.obj
 
 # target to build an object file
 matrix/tasks.c.obj:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.obj
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.obj
 .PHONY : matrix/tasks.c.obj
 
 matrix/tasks.i: matrix/tasks.c.i
@@ -166,7 +166,7 @@ matrix/tasks.i: matrix/tasks.c.i
 
 # target to preprocess a source file
 matrix/tasks.c.i:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.i
 .PHONY : matrix/tasks.c.i
 
 matrix/tasks.s: matrix/tasks.c.s
@@ -174,7 +174,7 @@ matrix/tasks.s: matrix/tasks.c.s
 
 # target to generate assembly for a file
 matrix/tasks.c.s:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.s
 .PHONY : matrix/tasks.c.s
 
 tests/matrix/test_matrix_functions.obj: tests/matrix/test_matrix_functions.c.obj
@@ -182,7 +182,7 @@ tests/matrix/test_matrix_functions.obj: tests/matrix/test_matrix_functions.c.obj
 
 # target to build an object file
 tests/matrix/test_matrix_functions.c.obj:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.obj
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.obj
 .PHONY : tests/matrix/test_matrix_functions.c.obj
 
 tests/matrix/test_matrix_functions.i: tests/matrix/test_matrix_functions.c.i
@@ -190,7 +190,7 @@ tests/matrix/test_matrix_functions.i: tests/matrix/test_matrix_functions.c.i
 
 # target to preprocess a source file
 tests/matrix/test_matrix_functions.c.i:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.i
 .PHONY : tests/matrix/test_matrix_functions.c.i
 
 tests/matrix/test_matrix_functions.s: tests/matrix/test_matrix_functions.c.s
@@ -198,7 +198,7 @@ tests/matrix/test_matrix_functions.s: tests/matrix/test_matrix_functions.c.s
 
 # target to generate assembly for a file
 tests/matrix/test_matrix_functions.c.s:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.s
 .PHONY : tests/matrix/test_matrix_functions.c.s
 
 tests/matrix/test_matrix_tasks.obj: tests/matrix/test_matrix_tasks.c.obj
@@ -206,7 +206,7 @@ tests/matrix/test_matrix_tasks.obj: tests/matrix/test_matrix_tasks.c.obj
 
 # target to build an object file
 tests/matrix/test_matrix_tasks.c.obj:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.obj
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.obj
 .PHONY : tests/matrix/test_matrix_tasks.c.obj
 
 tests/matrix/test_matrix_tasks.i: tests/matrix/test_matrix_tasks.c.i
@@ -214,7 +214,7 @@ tests/matrix/test_matrix_tasks.i: tests/matrix/test_matrix_tasks.c.i
 
 # target to preprocess a source file
 tests/matrix/test_matrix_tasks.c.i:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.i
 .PHONY : tests/matrix/test_matrix_tasks.c.i
 
 tests/matrix/test_matrix_tasks.s: tests/matrix/test_matrix_tasks.c.s
@@ -222,7 +222,7 @@ tests/matrix/test_matrix_tasks.s: tests/matrix/test_matrix_tasks.c.s
 
 # target to generate assembly for a file
 tests/matrix/test_matrix_tasks.c.s:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.s
 .PHONY : tests/matrix/test_matrix_tasks.c.s
 
 tests/vector/testFunctionsOfVector.obj: tests/vector/testFunctionsOfVector.c.obj
@@ -230,7 +230,7 @@ tests/vector/testFunctionsOfVector.obj: tests/vector/testFunctionsOfVector.c.obj
 
 # target to build an object file
 tests/vector/testFunctionsOfVector.c.obj:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.obj
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.obj
 .PHONY : tests/vector/testFunctionsOfVector.c.obj
 
 tests/vector/testFunctionsOfVector.i: tests/vector/testFunctionsOfVector.c.i
@@ -238,7 +238,7 @@ tests/vector/testFunctionsOfVector.i: tests/vector/testFunctionsOfVector.c.i
 
 # target to preprocess a source file
 tests/vector/testFunctionsOfVector.c.i:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.i
 .PHONY : tests/vector/testFunctionsOfVector.c.i
 
 tests/vector/testFunctionsOfVector.s: tests/vector/testFunctionsOfVector.c.s
@@ -246,7 +246,7 @@ tests/vector/testFunctionsOfVector.s: tests/vector/testFunctionsOfVector.c.s
 
 # target to generate assembly for a file
 tests/vector/testFunctionsOfVector.c.s:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.s
 .PHONY : tests/vector/testFunctionsOfVector.c.s
 
 vector/vector.obj: vector/vector.c.obj
@@ -254,7 +254,7 @@ vector/vector.obj: vector/vector.c.obj
 
 # target to build an object file
 vector/vector.c.obj:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj
 .PHONY : vector/vector.c.obj
 
 vector/vector.i: vector/vector.c.i
@@ -262,7 +262,7 @@ vector/vector.i: vector/vector.c.i
 
 # target to preprocess a source file
 vector/vector.c.i:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.i
 .PHONY : vector/vector.c.i
 
 vector/vector.s: vector/vector.c.s
@@ -270,7 +270,7 @@ vector/vector.s: vector/vector.c.s
 
 # target to generate assembly for a file
 vector/vector.c.s:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.s
 .PHONY : vector/vector.c.s
 
 vector/vectorVoid.obj: vector/vectorVoid.c.obj
@@ -278,7 +278,7 @@ vector/vectorVoid.obj: vector/vectorVoid.c.obj
 
 # target to build an object file
 vector/vectorVoid.c.obj:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj
 .PHONY : vector/vectorVoid.c.obj
 
 vector/vectorVoid.i: vector/vectorVoid.c.i
@@ -286,7 +286,7 @@ vector/vectorVoid.i: vector/vectorVoid.c.i
 
 # target to preprocess a source file
 vector/vectorVoid.c.i:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.i
 .PHONY : vector/vectorVoid.c.i
 
 vector/vectorVoid.s: vector/vectorVoid.c.s
@@ -294,7 +294,7 @@ vector/vectorVoid.s: vector/vectorVoid.c.s
 
 # target to generate assembly for a file
 vector/vectorVoid.c.s:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.s
 .PHONY : vector/vectorVoid.c.s
 
 # Help Target
@@ -338,6 +338,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

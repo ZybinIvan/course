@@ -1,8 +1,8 @@
-# Install script for directory: C:/Projects/CLion/laba5b_5d/libs/algorithms
+# Install script for directory: C:/Projects/CLion/laba5b_5d_5e/libs/algorithms
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/laba5b")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/laba5b_5d")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

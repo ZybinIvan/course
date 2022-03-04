@@ -16,21 +16,13 @@ CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.obj: \
 CMakeFiles/laba5b_5d.dir/libs/string/string_.c.obj: \
  ../libs/string/string_.c \
  ../libs/string/string_.h
-CMakeFiles/laba5b_5d.dir/libs/string/tasks/removeNonLetter.c.obj: \
- ../libs/string/string_.h \
- ../libs/string/tasks/removeNonLetter.c \
- ../libs/string/tasks/removeNonLetters.h
 CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string.c.obj: \
  ../libs/string/string_.h \
  ../libs/string/tests/test_string.c \
  ../libs/string/tests/test_string.h
-CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string_tasks.c.obj: \
- ../libs/string/string_.h \
- ../libs/string/tasks/removeNonLetters.h \
- ../libs/string/tests/test_string_tasks.c \
- ../libs/string/tests/test_string_tasks.h
 CMakeFiles/laba5b_5d.dir/main.c.obj: \
  ../libs/string/string_.h \
+ ../libs/string/tasks/removeExtraSpaces.h \
  ../libs/string/tasks/removeNonLetters.h \
  ../libs/string/tests/test_string.h \
  ../libs/string/tests/test_string_tasks.h \

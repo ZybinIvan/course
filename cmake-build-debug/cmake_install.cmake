@@ -1,8 +1,8 @@
-# Install script for directory: C:/Projects/CLion/laba5b_5d
+# Install script for directory: C:/Projects/CLion/laba5b_5d_5e
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/laba5b")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/laba5b_5d")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Projects/CLion/laba5b_5d/cmake-build-debug/libs/cmake_install.cmake")
+  include("C:/Projects/CLion/laba5b_5d_5e/cmake-build-debug/libs/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Projects/CLion/laba5b_5d/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Projects/CLion/laba5b_5d_5e/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

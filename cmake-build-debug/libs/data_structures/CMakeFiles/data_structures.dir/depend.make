@@ -13,8 +13,8 @@ libs/data_structures/CMakeFiles/data_structures.dir/Tests/matrix/test_matrix_tas
  ../libs/data_structures/tests/matrix/test_matrix_tasks.c \
  ../libs/data_structures/tests/matrix/test_matrix_tasks.h
 libs/data_structures/CMakeFiles/data_structures.dir/Tests/vector/testFunctionsOfVector.c.obj: \
- ../libs/data_structures/Tests/vector/testFunctionsOfVector.c \
- ../libs/data_structures/Tests/vector/testFunctionsOfVector.h \
+ ../libs/data_structures/tests/vector/testFunctionsOfVector.c \
+ ../libs/data_structures/tests/vector/testFunctionsOfVector.h \
  ../libs/data_structures/vector/vector.h
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj: \
  ../libs/algorithms/algorithms.h \

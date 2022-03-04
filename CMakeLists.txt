@@ -16,7 +16,7 @@ add_executable(laba5b_5d main.c libs/data_structures/vector/vector.h
         libs/string/string_.c
         libs/string/tests/test_string.h
         libs/string/tests/test_string.c
-        libs/string/tasks/removeNonLetters.h libs/string/tests/test_string_tasks.h libs/string/tests/test_string_tasks.c libs/string/tasks/removeNonLetter.c)
+        libs/string/tasks/removeNonLetters.h libs/string/tests/test_string_tasks.h libs/string/tasks/removeExtraSpaces.h)
 
 add_subdirectory(libs)
 target_link_libraries(laba5b_5d data_structures)

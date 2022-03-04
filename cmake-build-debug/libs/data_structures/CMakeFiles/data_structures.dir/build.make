@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projects\CLion\laba5b_5d
+CMAKE_SOURCE_DIR = C:\Projects\CLion\laba5b_5d_5e
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projects\CLion\laba5b_5d\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include libs/data_structures/CMakeFiles/data_structures.dir/depend.make
@@ -67,94 +67,94 @@ include libs/data_structures/CMakeFiles/data_structures.dir/flags.make
 
 libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
 libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj: ../libs/data_structures/vector/vector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\vector\vector.c.obj -c C:\Projects\CLion\laba5b_5d\libs\data_structures\vector\vector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj"
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\vector\vector.c.obj -c C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\vector\vector.c
 
 libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/vector/vector.c.i"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d\libs\data_structures\vector\vector.c > CMakeFiles\data_structures.dir\vector\vector.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\vector\vector.c > CMakeFiles\data_structures.dir\vector\vector.c.i
 
 libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/vector/vector.c.s"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d\libs\data_structures\vector\vector.c -o CMakeFiles\data_structures.dir\vector\vector.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\vector\vector.c -o CMakeFiles\data_structures.dir\vector\vector.c.s
 
 libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
 libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj: ../libs/data_structures/vector/vectorVoid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\vector\vectorVoid.c.obj -c C:\Projects\CLion\laba5b_5d\libs\data_structures\vector\vectorVoid.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj"
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\vector\vectorVoid.c.obj -c C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\vector\vectorVoid.c
 
 libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/vector/vectorVoid.c.i"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d\libs\data_structures\vector\vectorVoid.c > CMakeFiles\data_structures.dir\vector\vectorVoid.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\vector\vectorVoid.c > CMakeFiles\data_structures.dir\vector\vectorVoid.c.i
 
 libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/vector/vectorVoid.c.s"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d\libs\data_structures\vector\vectorVoid.c -o CMakeFiles\data_structures.dir\vector\vectorVoid.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\vector\vectorVoid.c -o CMakeFiles\data_structures.dir\vector\vectorVoid.c.s
 
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj: ../libs/data_structures/matrix/matrix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\matrix\matrix.c.obj -c C:\Projects\CLion\laba5b_5d\libs\data_structures\matrix\matrix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj"
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\matrix\matrix.c.obj -c C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\matrix\matrix.c
 
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/matrix/matrix.c.i"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d\libs\data_structures\matrix\matrix.c > CMakeFiles\data_structures.dir\matrix\matrix.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\matrix\matrix.c > CMakeFiles\data_structures.dir\matrix\matrix.c.i
 
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/matrix/matrix.c.s"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d\libs\data_structures\matrix\matrix.c -o CMakeFiles\data_structures.dir\matrix\matrix.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\matrix\matrix.c -o CMakeFiles\data_structures.dir\matrix\matrix.c.s
 
 libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
 libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.obj: ../libs/data_structures/tests/vector/testFunctionsOfVector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.obj"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\tests\vector\testFunctionsOfVector.c.obj -c C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\vector\testFunctionsOfVector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.obj"
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\tests\vector\testFunctionsOfVector.c.obj -c C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\tests\vector\testFunctionsOfVector.c
 
 libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.i"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\vector\testFunctionsOfVector.c > CMakeFiles\data_structures.dir\tests\vector\testFunctionsOfVector.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\tests\vector\testFunctionsOfVector.c > CMakeFiles\data_structures.dir\tests\vector\testFunctionsOfVector.c.i
 
 libs/data_structures/CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/tests/vector/testFunctionsOfVector.c.s"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\vector\testFunctionsOfVector.c -o CMakeFiles\data_structures.dir\tests\vector\testFunctionsOfVector.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\tests\vector\testFunctionsOfVector.c -o CMakeFiles\data_structures.dir\tests\vector\testFunctionsOfVector.c.s
 
 libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
 libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.obj: ../libs/data_structures/tests/matrix/test_matrix_functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.obj"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\tests\matrix\test_matrix_functions.c.obj -c C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\test_matrix_functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.obj"
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\tests\matrix\test_matrix_functions.c.obj -c C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\tests\matrix\test_matrix_functions.c
 
 libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.i"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\test_matrix_functions.c > CMakeFiles\data_structures.dir\tests\matrix\test_matrix_functions.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\tests\matrix\test_matrix_functions.c > CMakeFiles\data_structures.dir\tests\matrix\test_matrix_functions.c.i
 
 libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/tests/matrix/test_matrix_functions.c.s"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\test_matrix_functions.c -o CMakeFiles\data_structures.dir\tests\matrix\test_matrix_functions.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\tests\matrix\test_matrix_functions.c -o CMakeFiles\data_structures.dir\tests\matrix\test_matrix_functions.c.s
 
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.obj: ../libs/data_structures/matrix/tasks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.obj"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\matrix\tasks.c.obj -c C:\Projects\CLion\laba5b_5d\libs\data_structures\matrix\tasks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.obj"
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\matrix\tasks.c.obj -c C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\matrix\tasks.c
 
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/matrix/tasks.c.i"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d\libs\data_structures\matrix\tasks.c > CMakeFiles\data_structures.dir\matrix\tasks.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\matrix\tasks.c > CMakeFiles\data_structures.dir\matrix\tasks.c.i
 
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/tasks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/matrix/tasks.c.s"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d\libs\data_structures\matrix\tasks.c -o CMakeFiles\data_structures.dir\matrix\tasks.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\matrix\tasks.c -o CMakeFiles\data_structures.dir\matrix\tasks.c.s
 
 libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
 libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.obj: ../libs/data_structures/tests/matrix/test_matrix_tasks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.obj"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\tests\matrix\test_matrix_tasks.c.obj -c C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\test_matrix_tasks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.obj"
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\tests\matrix\test_matrix_tasks.c.obj -c C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\tests\matrix\test_matrix_tasks.c
 
 libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.i"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\test_matrix_tasks.c > CMakeFiles\data_structures.dir\tests\matrix\test_matrix_tasks.c.i
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\tests\matrix\test_matrix_tasks.c > CMakeFiles\data_structures.dir\tests\matrix\test_matrix_tasks.c.i
 
 libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.s"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d\libs\data_structures\tests\matrix\test_matrix_tasks.c -o CMakeFiles\data_structures.dir\tests\matrix\test_matrix_tasks.c.s
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Projects\CLion\laba5b_5d_5e\libs\data_structures\tests\matrix\test_matrix_tasks.c -o CMakeFiles\data_structures.dir\tests\matrix\test_matrix_tasks.c.s
 
 # Object files for target data_structures
 data_structures_OBJECTS = \
@@ -178,19 +178,19 @@ libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/tests/matrix/test_matrix_tasks.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/build.make
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Projects\CLion\laba5b_5d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libdata_structures.a"
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && $(CMAKE_COMMAND) -P CMakeFiles\data_structures.dir\cmake_clean_target.cmake
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\data_structures.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libdata_structures.a"
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && $(CMAKE_COMMAND) -P CMakeFiles\data_structures.dir\cmake_clean_target.cmake
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\data_structures.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/data_structures/CMakeFiles/data_structures.dir/build: libs/data_structures/libdata_structures.a
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/build
 
 libs/data_structures/CMakeFiles/data_structures.dir/clean:
-	cd /d C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures && $(CMAKE_COMMAND) -P CMakeFiles\data_structures.dir\cmake_clean.cmake
+	cd /d C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures && $(CMAKE_COMMAND) -P CMakeFiles\data_structures.dir\cmake_clean.cmake
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/clean
 
 libs/data_structures/CMakeFiles/data_structures.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Projects\CLion\laba5b_5d C:\Projects\CLion\laba5b_5d\libs\data_structures C:\Projects\CLion\laba5b_5d\cmake-build-debug C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures C:\Projects\CLion\laba5b_5d\cmake-build-debug\libs\data_structures\CMakeFiles\data_structures.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Projects\CLion\laba5b_5d_5e C:\Projects\CLion\laba5b_5d_5e\libs\data_structures C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures C:\Projects\CLion\laba5b_5d_5e\cmake-build-debug\libs\data_structures\CMakeFiles\data_structures.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/depend
 

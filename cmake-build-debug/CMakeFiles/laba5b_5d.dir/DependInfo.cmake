@@ -8,15 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Projects/CLion/laba5b_5d/libs/algorithms/algorithms.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/algorithms/algorithms.c.obj"
-  "C:/Projects/CLion/laba5b_5d/libs/data_structures/matrix/matrix.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/data_structures/matrix/matrix.c.obj"
-  "C:/Projects/CLion/laba5b_5d/libs/data_structures/vector/vector.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vector.c.obj"
-  "C:/Projects/CLion/laba5b_5d/libs/data_structures/vector/vectorVoid.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.obj"
-  "C:/Projects/CLion/laba5b_5d/libs/string/string_.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/string_.c.obj"
-  "C:/Projects/CLion/laba5b_5d/libs/string/tasks/removeNonLetter.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/tasks/removeNonLetter.c.obj"
-  "C:/Projects/CLion/laba5b_5d/libs/string/tests/test_string.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string.c.obj"
-  "C:/Projects/CLion/laba5b_5d/libs/string/tests/test_string_tasks.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string_tasks.c.obj"
-  "C:/Projects/CLion/laba5b_5d/main.c" "C:/Projects/CLion/laba5b_5d/cmake-build-debug/CMakeFiles/laba5b_5d.dir/main.c.obj"
+  "C:/Projects/CLion/laba5b_5d_5e/libs/algorithms/algorithms.c" "C:/Projects/CLion/laba5b_5d_5e/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/algorithms/algorithms.c.obj"
+  "C:/Projects/CLion/laba5b_5d_5e/libs/data_structures/matrix/matrix.c" "C:/Projects/CLion/laba5b_5d_5e/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/data_structures/matrix/matrix.c.obj"
+  "C:/Projects/CLion/laba5b_5d_5e/libs/data_structures/vector/vector.c" "C:/Projects/CLion/laba5b_5d_5e/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vector.c.obj"
+  "C:/Projects/CLion/laba5b_5d_5e/libs/data_structures/vector/vectorVoid.c" "C:/Projects/CLion/laba5b_5d_5e/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/data_structures/vector/vectorVoid.c.obj"
+  "C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.c" "C:/Projects/CLion/laba5b_5d_5e/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/string_.c.obj"
+  "C:/Projects/CLion/laba5b_5d_5e/libs/string/tests/test_string.c" "C:/Projects/CLion/laba5b_5d_5e/cmake-build-debug/CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string.c.obj"
+  "C:/Projects/CLion/laba5b_5d_5e/main.c" "C:/Projects/CLion/laba5b_5d_5e/cmake-build-debug/CMakeFiles/laba5b_5d.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -30,8 +28,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Projects/CLion/laba5b_5d/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/DependInfo.cmake"
-  "C:/Projects/CLion/laba5b_5d/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir/DependInfo.cmake"
+  "C:/Projects/CLion/laba5b_5d_5e/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/DependInfo.cmake"
+  "C:/Projects/CLion/laba5b_5d_5e/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

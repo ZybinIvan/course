@@ -84,3 +84,5 @@ char *copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDesti
 char *getEndOfString(char *s) {
     return s + strlen_(s);
 }
+
+
