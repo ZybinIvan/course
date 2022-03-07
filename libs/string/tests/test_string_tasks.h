@@ -4,6 +4,7 @@
 #include "../tasks/removeNonLetters.h"
 #include "../string_.h"
 #include "../tasks/removeExtraSpaces.h"
+#include "../tasks/digitsToEndLettersToStart.h"
 
 
 void assertString(const char *expected, char *got,
@@ -38,9 +39,18 @@ void test_removeExtraSpaces() {
     ASSERT_STRING(" m a i n \0", s);
 }
 
+void test_digitsToEndLettersToStart() {
+    char s[] = "3mai12n 5e\0";
+
+    digitsToEndLettersToStart(s);
+
+    ASSERT_STRING("main312 e5\0", s);
+}
+
 void test_string_tasks() {
     test_removeNonLetter();
     test_removeExtraSpaces();
+    test_digitsToEndLettersToStart();
 }
 
 #endif

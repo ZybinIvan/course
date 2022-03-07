@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.c
+string_.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
+
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
 stdio.h
 -
@@ -13,6 +17,12 @@ ctype.h
 -
 memory.h
 -
+strings.h
+-
+
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/digitsToEndLettersToStart.h
+../string_.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
 
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeExtraSpaces.h
 stdbool.h
@@ -23,6 +33,12 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeNonLetters.h
 ../string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
+
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tests/test_string.c
+assert.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tests/assert.h
+test_string.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tests/test_string.h
 
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tests/test_string.h
 ../string_.h
@@ -35,6 +51,8 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeNonLetters.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
 ../tasks/removeExtraSpaces.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeExtraSpaces.h
+../tasks/digitsToEndLettersToStart.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/digitsToEndLettersToStart.h
 
 C:/Projects/CLion/laba5b_5d_5e/main.c
 stdio.h

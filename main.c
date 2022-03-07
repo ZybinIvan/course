@@ -6,7 +6,6 @@
 #include "libs/string/tasks/removeExtraSpaces.h"
 
 
-
 int main() {
     test_functions_string();
     test_string_tasks();
