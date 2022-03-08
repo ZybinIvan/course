@@ -1,12 +1,15 @@
 #ifndef LABA5B_5D_5E_TEST_STRING_TASKS_H
 #define LABA5B_5D_5E_TEST_STRING_TASKS_H
 
+#include <assert.h>
+
 #include "../tasks/removeNonLetters.h"
 #include "../string_.h"
 #include "../tasks/removeExtraSpaces.h"
 #include "../tasks/digitsToEndLettersToStart.h"
 #include "../tasks/replaceDigitForEquivalentCountOfSpaces.h"
 #include "../tasks/replaceWords.h"
+#include "../tasks/isLexicographicallyOrdered.h"
 
 
 void assertString(const char *expected, char *got,
@@ -85,6 +88,38 @@ void test_replace_w1LessThanW2() {
     ASSERT_STRING("12345 12345 task 12345\0", s);
 }
 
+void test_isLexicographicallyOrdered_ordered() {
+    char s[] = "a abc abcd\0";
+
+    assert(isLexicographicallyOrdered(s) == 1);
+
+    ASSERT_STRING("1", "1");
+}
+
+void test_isLexicographicallyOrdered_notOrdered() {
+    char s[] = "123 122 156\0";
+
+    assert(isLexicographicallyOrdered(s) == 0);
+
+    ASSERT_STRING("0", "0");
+}
+
+void test_isLexicographicallyOrdered_emptyString() {
+    char s[] = "\0";
+
+    assert(isLexicographicallyOrdered(s) == 1);
+
+    ASSERT_STRING("1", "1");
+}
+
+void test_isLexicographicallyOrdered_allEqual() {
+    char s[] = "main main main\0";
+
+    assert(isLexicographicallyOrdered(s) == 1);
+
+    ASSERT_STRING("1", "1");
+}
+
 void test_string_tasks() {
     test_removeNonLetter();
 
@@ -97,6 +132,11 @@ void test_string_tasks() {
 
     test_replace_w2LessThanW1();
     test_replace_w1LessThanW2();
+
+    test_isLexicographicallyOrdered_ordered();
+    test_isLexicographicallyOrdered_notOrdered();
+    test_isLexicographicallyOrdered_emptyString();
+    test_isLexicographicallyOrdered_allEqual();
 }
 
 #endif

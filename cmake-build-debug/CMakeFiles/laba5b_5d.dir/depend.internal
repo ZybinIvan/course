@@ -23,6 +23,7 @@ CMakeFiles/laba5b_5d.dir/libs/string/tests/test_string.c.obj
 CMakeFiles/laba5b_5d.dir/main.c.obj
  C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
  C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/digitsToEndLettersToStart.h
+ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/isLexicographicallyOrdered.h
  C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeExtraSpaces.h
  C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeNonLetters.h
  C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/replaceDigitForEquivalentCountOfSpaces.h

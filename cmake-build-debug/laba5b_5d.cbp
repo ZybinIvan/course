@@ -207,6 +207,9 @@
 		<Unit filename="C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/digitsToEndLettersToStart.h">
 			<Option target="laba5b_5d"/>
 		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/isLexicographicallyOrdered.h">
+			<Option target="laba5b_5d"/>
+		</Unit>
 		<Unit filename="C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeExtraSpaces.h">
 			<Option target="laba5b_5d"/>
 		</Unit>

@@ -56,6 +56,6 @@ int getWord(char *beginSearch, WordDescriptor *word);
 
 int getWordReverse(char *rBegin, char *rEnd, WordDescriptor *word);
 
-bool wordcmp(WordDescriptor w1, WordDescriptor w2);
+int wordcmp(WordDescriptor w1, WordDescriptor w2);
 
 #endif //LABA5B_5D_STRING__H
