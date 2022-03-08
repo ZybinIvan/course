@@ -5,6 +5,7 @@
 #include "../string_.h"
 #include "../tasks/removeExtraSpaces.h"
 #include "../tasks/digitsToEndLettersToStart.h"
+#include "../tasks/replaceDigitForEquivalentCountOfSpaces.h"
 
 
 void assertString(const char *expected, char *got,
@@ -47,10 +48,28 @@ void test_digitsToEndLettersToStart() {
     ASSERT_STRING("main312 e5\0", s);
 }
 
+void test_replaceDigitForEquivalentCountOfSpaces() {
+    char s[] = "m1a2i3n\0";
+
+    replaceDigitForEquivalentCountOfSpaces(s);
+
+    ASSERT_STRING("m a  i   n\0", s);
+}
+
+void test_replaceDigitForEquivalentCountOfSpaces_withoutDigits() {
+    char s[] = " main\0";
+
+    replaceDigitForEquivalentCountOfSpaces(s);
+
+    ASSERT_STRING(" main\0", s);
+}
+
 void test_string_tasks() {
     test_removeNonLetter();
     test_removeExtraSpaces();
     test_digitsToEndLettersToStart();
+    test_replaceDigitForEquivalentCountOfSpaces();
+    test_replaceDigitForEquivalentCountOfSpaces_withoutDigits();
 }
 
 #endif

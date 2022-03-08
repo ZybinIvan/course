@@ -25,6 +25,7 @@ CMakeFiles/laba5b_5d.dir/main.c.obj: \
  ../libs/string/tasks/digitsToEndLettersToStart.h \
  ../libs/string/tasks/removeExtraSpaces.h \
  ../libs/string/tasks/removeNonLetters.h \
+ ../libs/string/tasks/replaceDigitForEquivalentCountOfSpaces.h \
  ../libs/string/tests/test_string.h \
  ../libs/string/tests/test_string_tasks.h \
  ../main.c
