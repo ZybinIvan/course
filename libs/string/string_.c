@@ -114,3 +114,11 @@ int wordcmp(WordDescriptor w1, WordDescriptor w2) {
     return *w1.begin - *w2.begin;
 }
 
+void getBagOfWords(BagOfWords *bag, char *s) {
+    size_t size = 0;
+    while(getWord(s, &bag->words[size]))
+        s = bag->words[size++].end;
+
+    bag->size = size;
+}
+

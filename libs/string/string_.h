@@ -11,6 +11,8 @@
 #define MAX_N_WORDS_IN_STRING 100
 #define MAX_WORD_SIZE 20
 
+
+
 char _stringBuffer[MAX_STRING_SIZE + 1];
 
 // Возвращает кол-во символов в строке
@@ -57,5 +59,15 @@ int getWord(char *beginSearch, WordDescriptor *word);
 int getWordReverse(char *rBegin, char *rEnd, WordDescriptor *word);
 
 int wordcmp(WordDescriptor w1, WordDescriptor w2);
+
+typedef struct BagOfWords {
+    WordDescriptor words[MAX_N_WORDS_IN_STRING];
+    size_t size;
+} BagOfWords;
+
+BagOfWords _bag ;
+BagOfWords _bag2 ;
+
+void getBagOfWords(BagOfWords *bag, char *s);
 
 #endif //LABA5B_5D_STRING__H
