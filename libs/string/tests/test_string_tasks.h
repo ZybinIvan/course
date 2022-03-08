@@ -6,6 +6,7 @@
 #include "../tasks/removeExtraSpaces.h"
 #include "../tasks/digitsToEndLettersToStart.h"
 #include "../tasks/replaceDigitForEquivalentCountOfSpaces.h"
+#include "../tasks/replaceWords.h"
 
 
 void assertString(const char *expected, char *got,
@@ -64,12 +65,38 @@ void test_replaceDigitForEquivalentCountOfSpaces_withoutDigits() {
     ASSERT_STRING(" main\0", s);
 }
 
+void test_replace_w2LessThanW1() {
+    char w1[] = "main\0";
+    char w2[] = "123\0";
+    char s[] = "main main task main\0";
+
+    replace(s, w1, w2);
+
+    ASSERT_STRING("123 123 task 123\0", s);
+}
+
+void test_replace_w1LessThanW2() {
+    char w1[] = "main\0";
+    char w2[] = "12345\0";
+    char s[] = "main main task main\0";
+
+    replace(s, w1, w2);
+
+    ASSERT_STRING("12345 12345 task 12345\0", s);
+}
+
 void test_string_tasks() {
     test_removeNonLetter();
+
     test_removeExtraSpaces();
+
     test_digitsToEndLettersToStart();
+
     test_replaceDigitForEquivalentCountOfSpaces();
     test_replaceDigitForEquivalentCountOfSpaces_withoutDigits();
+
+    test_replace_w2LessThanW1();
+    test_replace_w1LessThanW2();
 }
 
 #endif

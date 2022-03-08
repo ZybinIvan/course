@@ -15,6 +15,8 @@ memory.h
 -
 strings.h
 -
+stdbool.h
+-
 
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/digitsToEndLettersToStart.h
 ../string_.h
@@ -34,6 +36,10 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/replaceDigitForEquivalentCountO
 ../string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
 
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/replaceWords.h
+../string_.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
+
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tests/test_string.h
 ../string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
@@ -49,6 +55,8 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeExtraSpaces.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/digitsToEndLettersToStart.h
 ../tasks/replaceDigitForEquivalentCountOfSpaces.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/replaceDigitForEquivalentCountOfSpaces.h
+../tasks/replaceWords.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/replaceWords.h
 
 C:/Projects/CLion/laba5b_5d_5e/main.c
 stdio.h

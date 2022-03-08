@@ -5,6 +5,7 @@
 #include <ctype.h>
 #include <memory.h>
 #include <strings.h>
+#include <stdbool.h>
 
 #define MAX_STRING_SIZE 100
 #define MAX_N_WORDS_IN_STRING 100
@@ -54,5 +55,7 @@ typedef struct WordDescriptor {
 int getWord(char *beginSearch, WordDescriptor *word);
 
 int getWordReverse(char *rBegin, char *rEnd, WordDescriptor *word);
+
+bool wordcmp(WordDescriptor w1, WordDescriptor w2);
 
 #endif //LABA5B_5D_STRING__H

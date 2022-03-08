@@ -7,21 +7,21 @@ void replaceDigitForEquivalentCountOfSpaces (char *s) {
     char *endBuffer = copy(s, getEndOfString(s), _stringBuffer);
     *endBuffer = '\0';
 
-    char *iRead = _stringBuffer;
-    char *iWrite = s;
+    char *readPtr = _stringBuffer;
+    char *recPtr = s;
 
-    while (*iRead != '\0') {
-        if (isdigit(*iRead))
-            for (int i = '0'; i < *iRead; ++i)
-                *iWrite++ = ' ';
+    while (*readPtr != '\0') {
+        if (isdigit(*readPtr))
+            for (int i = '0'; i < *readPtr; ++i)
+                *recPtr++ = ' ';
 
         else
-            *iWrite++ = *iRead;
+            *recPtr++ = *readPtr;
 
-        iRead++;
+        readPtr++;
     }
 
-    *iWrite = '\0';
+    *recPtr = '\0';
 }
 
 #endif

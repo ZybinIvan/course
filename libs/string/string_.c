@@ -105,3 +105,12 @@ int getWordReverse(char *rBegin, char *rEnd, WordDescriptor *word) {
     return 1;
 }
 
+bool wordcmp(WordDescriptor w1, WordDescriptor w2) {
+    while (w1.begin != (w1.end - 1) && w2.begin != (w2.end - 1) && *w1.begin == *w2.begin) {
+        w1.begin++;
+        w2.begin++;
+    }
+
+    return *w1.begin - *w2.begin;
+}
+

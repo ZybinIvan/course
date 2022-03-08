@@ -8,18 +8,18 @@ void removeExtraSpace(char *s) {
     if (*s == '\0')
         return;
 
-    char *iRead = ++s;
-    while (*iRead != '\0' && isgraph(*iRead))
-        iRead++;
+    char *readPtr = ++s;
+    while (*readPtr != '\0' && isgraph(*readPtr))
+        readPtr++;
 
-    char *iWrite = iRead;
-    while (*iRead != '\0') {
-        if (isgraph(*iRead) || isgraph(*(iRead - 1)))
-            *iWrite++ = *iRead;
-        iRead++;
+    char *recPtr = readPtr;
+    while (*readPtr != '\0') {
+        if (isgraph(*readPtr) || isgraph(*(readPtr - 1)))
+            *recPtr++ = *readPtr;
+        readPtr++;
     }
 
-    *iWrite = '\0';
+    *recPtr = '\0';
 }
 
 #endif
