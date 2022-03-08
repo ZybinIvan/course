@@ -17,6 +17,7 @@
 #include "../tasks/findLastWordOfFirstStringThatInTheSecondString.h"
 #include "../tasks/areThereTheSameWordsInTheString.h"
 #include "../tasks/areThereTheAnagramsInTheString.h"
+#include "../tasks/getStringDifferentFromLastWord.h"
 
 
 void assertString(const char *expected, char *got,
@@ -325,6 +326,21 @@ void test_areThereTheAnagramsInTheString_emptyString() {
 }
 
 // task 15
+void test_getStringDifferentFromLastWord() {
+    char s1[] = "a b cd b b s b\0";
+    char *s2 = getStringDifferentFromLastWord(s1);
+
+    ASSERT_STRING("a cd s\0", s2);
+}
+
+void test_getStringDifferentFromLastWord_emptyString() {
+    char s1[] = "\0";
+    char *s2 = getStringDifferentFromLastWord(s1);
+
+    ASSERT_STRING("\0", s2);
+}
+
+// task 16
 void test_string_tasks() {
     // task 1
     test_removeNonLetter_withSpaces();
@@ -385,6 +401,11 @@ void test_string_tasks() {
     test_areThereTheAnagramsInTheString_emptyString();
 
     // task 15
+    test_getStringDifferentFromLastWord();
+    test_getStringDifferentFromLastWord_emptyString();
+
+    // task 16
+
 }
 
 #endif

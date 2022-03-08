@@ -27,6 +27,7 @@ CMakeFiles/laba5b_5d.dir/main.c.obj: \
  ../libs/string/tasks/digitsToEndLettersToStart.h \
  ../libs/string/tasks/findLastWordOfFirstStringThatInTheSecondString.h \
  ../libs/string/tasks/getCountOfPalindromesWords.h \
+ ../libs/string/tasks/getStringDifferentFromLastWord.h \
  ../libs/string/tasks/getStringWithAlternatingWords.h \
  ../libs/string/tasks/isLexicographicallyOrdered.h \
  ../libs/string/tasks/printWordBeforeFirstWordWithA.h \

@@ -42,6 +42,10 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/getCountOfPalindromesWords.h
 ../string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
 
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/getStringDifferentFromLastWord.h
+../string_.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
+
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/getStringWithAlternatingWords.h
 ../string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
@@ -115,6 +119,8 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/findLastWordOfFirstStringThatIn
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/areThereTheSameWordsInTheString.h
 ../tasks/areThereTheAnagramsInTheString.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/areThereTheAnagramsInTheString.h
+../tasks/getStringDifferentFromLastWord.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/getStringDifferentFromLastWord.h
 
 C:/Projects/CLion/laba5b_5d_5e/main.c
 stdio.h
