@@ -158,3 +158,10 @@ bool isPalindromeWord(WordDescriptor word) {
     return (word.begin > word.end);
 }
 
+void wordDescriptorToString(WordDescriptor word, char *destination) {
+    char *end = copy(word.begin, word.end, destination);
+    *end = '\0';
+}
+
+
+

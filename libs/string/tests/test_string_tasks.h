@@ -14,6 +14,7 @@
 #include "../tasks/getStringWithAlternatingWords.h"
 #include "../tasks/reverseWordOrder.h"
 #include "../tasks/printWordBeforeFirstWordWithA.h"
+#include "../tasks/findLastWordOfFirstStringThatInTheSecondString.h"
 
 
 void assertString(const char *expected, char *got,
@@ -248,6 +249,29 @@ void testAll_getWordBeforeFirstWordWithA() {
     assert (getWordBeforeFirstWordWithA(s4, &beginWord, &endWord) == NOT_FOUND_A_WORD_WITH_A);
 }
 
+// task 12
+void test_findLastWordOfFirstStringThatInTheSecondString() {
+    char s1[] = "main pop char qwerty pop\0";
+    char s2[] = "fuf qwerty pop\0";
+    char s[MAX_WORD_SIZE];
+
+    WordDescriptor word = findLastWordOfFirstStringThatInTheSecondString(s1, s2);
+    wordDescriptorToString(word, s);
+
+    ASSERT_STRING("pop", s);
+}
+
+void test_findLastWordOfFirstStringThatInTheSecondString_withoutSameWords() {
+    char s1[] = "main pop\0";
+    char s2[] = "qwerty\0";
+    char s[MAX_WORD_SIZE];
+
+    WordDescriptor word = findLastWordOfFirstStringThatInTheSecondString(s1, s2);
+    wordDescriptorToString(word, s);
+
+    ASSERT_STRING("\0", s);
+}
+
 void test_string_tasks() {
     // task 1
     test_removeNonLetter_withSpaces();
@@ -292,6 +316,10 @@ void test_string_tasks() {
 
     // task 11
     testAll_getWordBeforeFirstWordWithA();
+
+    // task 12
+    test_findLastWordOfFirstStringThatInTheSecondString();
+    test_findLastWordOfFirstStringThatInTheSecondString_withoutSameWords();
 }
 
 #endif

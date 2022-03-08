@@ -85,4 +85,6 @@ typedef enum WordBeforeFirstWordWithAReturnCode {
     EMPTY_STRING
 } WordBeforeFirstWordWithAReturnCode;
 
+void wordDescriptorToString(WordDescriptor word, char *destination);
+
 #endif //LABA5B_5D_STRING__H
