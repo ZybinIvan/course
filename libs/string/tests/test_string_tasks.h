@@ -18,6 +18,7 @@
 #include "../tasks/areThereTheSameWordsInTheString.h"
 #include "../tasks/areThereTheAnagramsInTheString.h"
 #include "../tasks/getStringDifferentFromLastWord.h"
+#include "../tasks/findWordBeforeFirstCommonWord.h"
 
 
 void assertString(const char *expected, char *got,
@@ -341,6 +342,39 @@ void test_getStringDifferentFromLastWord_emptyString() {
 }
 
 // task 16
+void test_findWordBeforeFirstCommonWord_withCommonWord() {
+    char s1[] = "a b c dd c\0";
+    char s2[] = "gn d c p \0";
+    char s[MAX_WORD_SIZE];
+
+    WordDescriptor word = findWordBeforeFirstCommonWord(s1, s2);
+    wordDescriptorToString(word, s);
+
+    ASSERT_STRING("b\0", s);
+}
+
+void test_findWordBeforeFirstCommonWord_withoutCommonWord() {
+    char s1[] = "a b c d\0";
+    char s2[] = "q w e r t y\0";
+    char s[MAX_WORD_SIZE];
+
+    WordDescriptor word = findWordBeforeFirstCommonWord(s1, s2);
+    wordDescriptorToString(word, s);
+
+    ASSERT_STRING("\0", s);
+}
+
+void test_findWordBeforeFirstCommonWord_commonIsFirst() {
+    char s1[] = "a b c d\0";
+    char s2[] = "a w e r t y\0";
+    char s[MAX_WORD_SIZE];
+
+    WordDescriptor word = findWordBeforeFirstCommonWord(s1, s2);
+    wordDescriptorToString(word, s);
+
+    ASSERT_STRING("\0", s);
+}
+
 void test_string_tasks() {
     // task 1
     test_removeNonLetter_withSpaces();
@@ -405,7 +439,9 @@ void test_string_tasks() {
     test_getStringDifferentFromLastWord_emptyString();
 
     // task 16
-
+    test_findWordBeforeFirstCommonWord_withCommonWord();
+    test_findWordBeforeFirstCommonWord_withoutCommonWord();
+    test_findWordBeforeFirstCommonWord_commonIsFirst();
 }
 
 #endif

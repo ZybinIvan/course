@@ -19,6 +19,8 @@ stdbool.h
 -
 malloc.h
 -
+stdlib.h
+-
 
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/areThereTheAnagramsInTheString.h
 ../string_.h
@@ -35,6 +37,10 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/digitsToEndLettersToStart.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
 
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/findLastWordOfFirstStringThatInTheSecondString.h
+../string_.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
+
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/findWordBeforeFirstCommonWord.h
 ../string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
 
@@ -121,6 +127,8 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/areThereTheSameWordsInTheString
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/areThereTheAnagramsInTheString.h
 ../tasks/getStringDifferentFromLastWord.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/getStringDifferentFromLastWord.h
+../tasks/findWordBeforeFirstCommonWord.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/findWordBeforeFirstCommonWord.h
 
 C:/Projects/CLion/laba5b_5d_5e/main.c
 stdio.h
