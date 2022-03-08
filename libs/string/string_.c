@@ -100,7 +100,8 @@ int getWordReverse(char *rBegin, char *rEnd, WordDescriptor *word) {
     if (word->end == rEnd)
         return 0;
 
-    word->begin = findSpaceReverse(word->end, rEnd);
+    word->begin = findSpaceReverse(word->end, rEnd) + 1;
+    word->end++;
 
     return 1;
 }

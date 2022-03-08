@@ -12,6 +12,7 @@
 #include "../tasks/isLexicographicallyOrdered.h"
 #include "../tasks/getCountOfPalindromesWords.h"
 #include "../tasks/getStringWithAlternatingWords.h"
+#include "../tasks/reverseWordOrder.h"
 
 
 void assertString(const char *expected, char *got,
@@ -200,6 +201,31 @@ void test_getStringWithAlternatingWords_differentCountOfWords2(){
     ASSERT_STRING("successful test of this function\0", getStringWithAlternatingWords(s1, s2));
 }
 
+// task 10
+void test_reverseWordOrder() {
+    char s[] = "function this of test successful\0";
+
+    reverseWordOrder(s);
+
+    ASSERT_STRING("successful test of this function", s);
+}
+void test_reverseWordOrder2() {
+    char s[] = "main   test\0";
+
+    reverseWordOrder(s);
+
+    ASSERT_STRING("test main\0", s);
+}
+
+void test_reverseWordOrder_emptyString() {
+    char s[] = "\0";
+
+    reverseWordOrder(s);
+
+    ASSERT_STRING("\0", s);
+}
+
+
 void test_string_tasks() {
     // task 1
     test_removeNonLetter_withSpaces();
@@ -236,6 +262,11 @@ void test_string_tasks() {
     test_getStringWithAlternatingWords_sameCountOfWords();
     test_getStringWithAlternatingWords_differentCountOfWords1();
     test_getStringWithAlternatingWords_differentCountOfWords2();
+
+    // task 10
+    test_reverseWordOrder();
+    test_reverseWordOrder2();
+    test_reverseWordOrder_emptyString();
 }
 
 #endif
