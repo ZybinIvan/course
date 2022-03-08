@@ -20,6 +20,16 @@ stdbool.h
 malloc.h
 -
 
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/areThereTheAnagramsInTheString.h
+../string_.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
+../tasks/areThereTheSameWordsInTheString.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/areThereTheSameWordsInTheString.h
+
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/areThereTheSameWordsInTheString.h
+../string_.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
+
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/digitsToEndLettersToStart.h
 ../string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
@@ -101,6 +111,10 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/reverseWordOrder.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/printWordBeforeFirstWordWithA.h
 ../tasks/findLastWordOfFirstStringThatInTheSecondString.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/findLastWordOfFirstStringThatInTheSecondString.h
+../tasks/areThereTheSameWordsInTheString.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/areThereTheSameWordsInTheString.h
+../tasks/areThereTheAnagramsInTheString.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/areThereTheAnagramsInTheString.h
 
 C:/Projects/CLion/laba5b_5d_5e/main.c
 stdio.h

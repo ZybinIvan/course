@@ -15,6 +15,8 @@
 #include "../tasks/reverseWordOrder.h"
 #include "../tasks/printWordBeforeFirstWordWithA.h"
 #include "../tasks/findLastWordOfFirstStringThatInTheSecondString.h"
+#include "../tasks/areThereTheSameWordsInTheString.h"
+#include "../tasks/areThereTheAnagramsInTheString.h"
 
 
 void assertString(const char *expected, char *got,
@@ -99,6 +101,14 @@ void test_replaceDigitForEquivalentCountOfSpaces_withoutDigits() {
     replaceDigitForEquivalentCountOfSpaces(s);
 
     ASSERT_STRING(" main\0", s);
+}
+
+void test_replaceDigitForEquivalentCountOfSpaces_onlyDigits() {
+    char s[] = "123\0";
+
+    replaceDigitForEquivalentCountOfSpaces(s);
+
+    ASSERT_STRING("      \0", s);
 }
 
 // task 5
@@ -272,6 +282,49 @@ void test_findLastWordOfFirstStringThatInTheSecondString_withoutSameWords() {
     ASSERT_STRING("\0", s);
 }
 
+// task 13
+void test_areThereTheSameWordsInTheString_withSameWords() {
+    char s[] = "main qwerty pop main\0";
+
+    assert(areThereTheSameWordsInTheString(s) == 1);
+
+    ASSERT_STRING("1", "1");
+}
+
+void test_areThereTheSameWordsInTheString_withoutSameWords() {
+    char s[] = "main qwerty pop\0";
+
+    assert(areThereTheSameWordsInTheString(s) == 0);
+
+    ASSERT_STRING("1", "1");
+}
+
+// task 14
+void test_areThereTheAnagramsInTheString_withAnagrams() {
+    char s[] = "main ainm qwert fuf\0";
+
+    assert(areThereTheAnagramsInTheString(s) == 1);
+
+    ASSERT_STRING("1", "1");
+}
+
+void test_areThereTheAnagramsInTheString_withoutAnagrams() {
+    char s[] = "main qwert fuf\0";
+
+    assert(areThereTheAnagramsInTheString(s) == 0);
+
+    ASSERT_STRING("0", "0");
+}
+
+void test_areThereTheAnagramsInTheString_emptyString() {
+    char s[] = "\0";
+
+    assert(areThereTheAnagramsInTheString(s) == 0);
+
+    ASSERT_STRING("0", "0");
+}
+
+// task 15
 void test_string_tasks() {
     // task 1
     test_removeNonLetter_withSpaces();
@@ -288,6 +341,7 @@ void test_string_tasks() {
     // task 4
     test_replaceDigitForEquivalentCountOfSpaces();
     test_replaceDigitForEquivalentCountOfSpaces_withoutDigits();
+    test_replaceDigitForEquivalentCountOfSpaces_onlyDigits();
 
     // task 5
     test_replace_w2LessThanW1();
@@ -320,6 +374,17 @@ void test_string_tasks() {
     // task 12
     test_findLastWordOfFirstStringThatInTheSecondString();
     test_findLastWordOfFirstStringThatInTheSecondString_withoutSameWords();
+
+    // task 13
+    test_areThereTheSameWordsInTheString_withSameWords();
+    test_areThereTheSameWordsInTheString_withoutSameWords();
+
+    // task 14
+    test_areThereTheAnagramsInTheString_withAnagrams();
+    test_areThereTheAnagramsInTheString_withoutAnagrams();
+    test_areThereTheAnagramsInTheString_emptyString();
+
+    // task 15
 }
 
 #endif
