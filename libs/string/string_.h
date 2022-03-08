@@ -70,4 +70,12 @@ BagOfWords _bag2 ;
 
 void getBagOfWords(BagOfWords *bag, char *s);
 
+char* findNonComma(char *begin);
+
+char* findComma(char *begin);
+
+int getWordComma(char *beginSearch, WordDescriptor *word);
+
+bool isPalindromeWord(WordDescriptor word);
+
 #endif //LABA5B_5D_STRING__H

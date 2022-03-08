@@ -10,6 +10,7 @@
 #include "../tasks/replaceDigitForEquivalentCountOfSpaces.h"
 #include "../tasks/replaceWords.h"
 #include "../tasks/isLexicographicallyOrdered.h"
+#include "../tasks/getCountOfPalindromesWords.h"
 
 
 void assertString(const char *expected, char *got,
@@ -120,6 +121,30 @@ void test_isLexicographicallyOrdered_allEqual() {
     ASSERT_STRING("1", "1");
 }
 
+void test_getCountOfPalindromesWords_withPalindromes() {
+    char s[] = "main,tenet,121,r\0";
+
+    assert((getCountOfPalindromesWords(s)) == 3);
+
+    ASSERT_STRING("3", "3");
+}
+
+void test_getCountOfPalindromesWords_withoutPalindromes() {
+    char s[] = "main,ten,123,rl\0";
+
+    assert((getCountOfPalindromesWords(s)) == 0);
+
+    ASSERT_STRING("0", "0");
+}
+
+void test_getCountOfPalindromesWords_emptyString() {
+    char s[] = "\0";
+
+    assert((getCountOfPalindromesWords(s)) == 0);
+
+    ASSERT_STRING("0", "0");
+}
+
 void test_string_tasks() {
     test_removeNonLetter();
 
@@ -137,6 +162,10 @@ void test_string_tasks() {
     test_isLexicographicallyOrdered_notOrdered();
     test_isLexicographicallyOrdered_emptyString();
     test_isLexicographicallyOrdered_allEqual();
+
+    test_getCountOfPalindromesWords_withPalindromes();
+    test_getCountOfPalindromesWords_withoutPalindromes();
+    test_getCountOfPalindromesWords_emptyString();
 }
 
 #endif

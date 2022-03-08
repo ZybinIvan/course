@@ -11,13 +11,5 @@ int main() {
     test_functions_string();
     test_string_tasks();
 
-    char s1[] = "\0";
-
-    printWordInReverseOrder(s1);
-
-    char s2[] = "qw rt yu io as\0";
-
-    printWordInReverseOrder(s2);
-
     return 0;
 }

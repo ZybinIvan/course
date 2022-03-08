@@ -16,7 +16,7 @@ char *find(char *begin, char *end, int ch) {
 }
 
 char *findNonSpace(char *begin) {
-    while (isspace(*begin) && *begin != '\0')
+    while (isspace(*begin))
         begin++;
 
     return begin;
@@ -120,5 +120,40 @@ void getBagOfWords(BagOfWords *bag, char *s) {
         s = bag->words[size++].end;
 
     bag->size = size;
+}
+
+char* findNonComma(char *begin) {
+    while (*begin == ',')
+        begin++;
+
+    return begin;
+}
+
+char* findComma(char *begin) {
+    while(*begin != ',' && *begin != '\0')
+        begin++;
+
+    return begin;
+}
+
+int getWordComma(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonComma(beginSearch);
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = findComma(word->begin);
+
+    return 1;
+}
+
+bool isPalindromeWord(WordDescriptor word) {
+    word.end--;
+
+    while (word.begin <= word.end && *word.begin == *word.end) {
+        word.begin++;
+        word.end--;
+    }
+
+    return (word.begin > word.end);
 }
 
