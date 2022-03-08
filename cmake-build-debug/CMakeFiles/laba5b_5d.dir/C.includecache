@@ -78,6 +78,10 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeNonLetters.h
 ../string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
 
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeWordsLikeLast.h
+../string_.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
+
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/replaceDigitForEquivalentCountOfSpaces.h
 ../string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
@@ -129,6 +133,8 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/areThereTheAnagramsInTheString.
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/getStringDifferentFromLastWord.h
 ../tasks/findWordBeforeFirstCommonWord.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/findWordBeforeFirstCommonWord.h
+../tasks/removeWordsLikeLast.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeWordsLikeLast.h
 
 C:/Projects/CLion/laba5b_5d_5e/main.c
 stdio.h

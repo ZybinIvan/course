@@ -243,6 +243,9 @@
 		<Unit filename="C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeNonLetters.h">
 			<Option target="laba5b_5d"/>
 		</Unit>
+		<Unit filename="C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeWordsLikeLast.h">
+			<Option target="laba5b_5d"/>
+		</Unit>
 		<Unit filename="C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/replaceDigitForEquivalentCountOfSpaces.h">
 			<Option target="laba5b_5d"/>
 		</Unit>

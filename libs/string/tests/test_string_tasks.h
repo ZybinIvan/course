@@ -19,6 +19,7 @@
 #include "../tasks/areThereTheAnagramsInTheString.h"
 #include "../tasks/getStringDifferentFromLastWord.h"
 #include "../tasks/findWordBeforeFirstCommonWord.h"
+#include "../tasks/removeWordsLikeLast.h"
 
 
 void assertString(const char *expected, char *got,
@@ -375,6 +376,30 @@ void test_findWordBeforeFirstCommonWord_commonIsFirst() {
     ASSERT_STRING("\0", s);
 }
 
+void test_removeWordsLikeLast() {
+    char s[] = "a b c a n kj a fr a\0";
+
+    removeWordsLikeLast(s);
+
+    ASSERT_STRING("b c n kj fr a\0", s);
+}
+
+void test_removeWordsLikeLast_oneWord() {
+    char s[] = "a\0";
+
+    removeWordsLikeLast(s);
+
+    ASSERT_STRING("a\0", s);
+}
+
+void test_removeWordsLikeLast_emptyString() {
+    char s[] = "\0";
+
+    removeWordsLikeLast(s);
+
+    ASSERT_STRING("\0", s);
+}
+
 void test_string_tasks() {
     // task 1
     test_removeNonLetter_withSpaces();
@@ -442,6 +467,13 @@ void test_string_tasks() {
     test_findWordBeforeFirstCommonWord_withCommonWord();
     test_findWordBeforeFirstCommonWord_withoutCommonWord();
     test_findWordBeforeFirstCommonWord_commonIsFirst();
+
+    // task 17
+    test_removeWordsLikeLast();
+    test_removeWordsLikeLast_oneWord();
+    test_removeWordsLikeLast_emptyString();
+
+
 }
 
 #endif

@@ -35,6 +35,7 @@ CMakeFiles/laba5b_5d.dir/main.c.obj: \
  ../libs/string/tasks/printWordsInReverseOrder.h \
  ../libs/string/tasks/removeExtraSpaces.h \
  ../libs/string/tasks/removeNonLetters.h \
+ ../libs/string/tasks/removeWordsLikeLast.h \
  ../libs/string/tasks/replaceDigitForEquivalentCountOfSpaces.h \
  ../libs/string/tasks/replaceWords.h \
  ../libs/string/tasks/reverseWordOrder.h \
