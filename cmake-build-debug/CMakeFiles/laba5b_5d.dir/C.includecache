@@ -36,6 +36,10 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/digitsToEndLettersToStart.h
 ../string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
 
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/fillTheSmallerString.h
+../string_.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
+
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/findLastWordOfFirstStringThatInTheSecondString.h
 ../string_.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/string_.h
@@ -135,6 +139,8 @@ C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/getStringDifferentFromLastWord.
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/findWordBeforeFirstCommonWord.h
 ../tasks/removeWordsLikeLast.h
 C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/removeWordsLikeLast.h
+../tasks/fillTheSmallerString.h
+C:/Projects/CLion/laba5b_5d_5e/libs/string/tasks/fillTheSmallerString.h
 
 C:/Projects/CLion/laba5b_5d_5e/main.c
 stdio.h

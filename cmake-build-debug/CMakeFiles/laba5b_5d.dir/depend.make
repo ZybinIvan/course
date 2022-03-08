@@ -25,6 +25,7 @@ CMakeFiles/laba5b_5d.dir/main.c.obj: \
  ../libs/string/tasks/areThereTheAnagramsInTheString.h \
  ../libs/string/tasks/areThereTheSameWordsInTheString.h \
  ../libs/string/tasks/digitsToEndLettersToStart.h \
+ ../libs/string/tasks/fillTheSmallerString.h \
  ../libs/string/tasks/findLastWordOfFirstStringThatInTheSecondString.h \
  ../libs/string/tasks/findWordBeforeFirstCommonWord.h \
  ../libs/string/tasks/getCountOfPalindromesWords.h \

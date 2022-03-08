@@ -20,6 +20,7 @@
 #include "../tasks/getStringDifferentFromLastWord.h"
 #include "../tasks/findWordBeforeFirstCommonWord.h"
 #include "../tasks/removeWordsLikeLast.h"
+#include "../tasks/fillTheSmallerString.h"
 
 
 void assertString(const char *expected, char *got,
@@ -400,6 +401,35 @@ void test_removeWordsLikeLast_emptyString() {
     ASSERT_STRING("\0", s);
 }
 
+// task 18
+void test_fillTheSmallerString_firstSmallerThanSecond() {
+    char s1[] = "a b c\0";
+    char s2[] = "g bb c d e f\0";
+
+    fillTheSmallerString(s1, s2);
+
+    ASSERT_STRING("a b c d e f\0", s1);
+}
+
+void test_fillTheSmallerString_secondSmallerThanFirst() {
+    char s1[] = "g bb c d e f\0";
+    char s2[] = "a b c\0";
+
+    fillTheSmallerString(s1, s2);
+
+    ASSERT_STRING("a b c d e f\0", s2);
+}
+
+void test_fillTheSmallerString_sameSizes() {
+    char s1[] = "g bb d\0";
+    char s2[] = "a b c\0";
+
+    fillTheSmallerString(s1, s2);
+
+    ASSERT_STRING("a b c\0", s2);
+    ASSERT_STRING("g bb d\0", s1);
+}
+
 void test_string_tasks() {
     // task 1
     test_removeNonLetter_withSpaces();
@@ -473,7 +503,10 @@ void test_string_tasks() {
     test_removeWordsLikeLast_oneWord();
     test_removeWordsLikeLast_emptyString();
 
-
+    // task 18
+    test_fillTheSmallerString_firstSmallerThanSecond();
+    test_fillTheSmallerString_secondSmallerThanFirst();
+    test_fillTheSmallerString_sameSizes();
 }
 
 #endif
