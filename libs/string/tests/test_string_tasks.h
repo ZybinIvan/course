@@ -21,6 +21,7 @@
 #include "../tasks/findWordBeforeFirstCommonWord.h"
 #include "../tasks/removeWordsLikeLast.h"
 #include "../tasks/fillTheSmallerString.h"
+#include "../tasks/isIncludedEachLetterOfTheWordInTheString.h"
 
 
 void assertString(const char *expected, char *got,
@@ -430,6 +431,25 @@ void test_fillTheSmallerString_sameSizes() {
     ASSERT_STRING("g bb d\0", s1);
 }
 
+// task 19
+void test_isIncludedEachLetterOfTheWordInTheString() {
+    char s[] = "abcdefg\0";
+    char word[] = "acd\0";
+
+    assert(isIncludedEachLetterOfTheWordInTheString(s, word));
+
+    ASSERT_STRING("1", "1");
+}
+
+void test_isIncludedEachLetterOfTheWordInTheString_notIncluded() {
+    char s[] = "abcdefg\0";
+    char word[] = "acdq\0";
+
+    assert(!isIncludedEachLetterOfTheWordInTheString(s, word));
+
+    ASSERT_STRING("0", "0");
+}
+
 void test_string_tasks() {
     // task 1
     test_removeNonLetter_withSpaces();
@@ -507,6 +527,10 @@ void test_string_tasks() {
     test_fillTheSmallerString_firstSmallerThanSecond();
     test_fillTheSmallerString_secondSmallerThanFirst();
     test_fillTheSmallerString_sameSizes();
+
+    // task 19
+    test_isIncludedEachLetterOfTheWordInTheString();
+    test_isIncludedEachLetterOfTheWordInTheString_notIncluded();
 }
 
 #endif
