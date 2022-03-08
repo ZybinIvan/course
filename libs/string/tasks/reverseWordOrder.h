@@ -8,13 +8,13 @@ void reverseWordOrder(char *s) {
     *endBuffer = '\0';
 
     WordDescriptor word;
-    while(getWordReverse(endBuffer - 1, _stringBuffer - 1, &word)) {
+    while (getWordReverse(endBuffer - 1, _stringBuffer - 1, &word)) {
         s = copy(word.begin, word.end, s);
         *s++ = ' ';
         endBuffer = word.begin;
     }
 
-    *(--s) = '\0' ;
+    *(--s) = '\0';
 }
 
 #endif

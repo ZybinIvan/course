@@ -117,21 +117,21 @@ int wordcmp(WordDescriptor w1, WordDescriptor w2) {
 
 void getBagOfWords(BagOfWords *bag, char *s) {
     size_t size = 0;
-    while(getWord(s, &bag->words[size]))
+    while (getWord(s, &bag->words[size]))
         s = bag->words[size++].end;
 
     bag->size = size;
 }
 
-char* findNonComma(char *begin) {
+char *findNonComma(char *begin) {
     while (*begin == ',')
         begin++;
 
     return begin;
 }
 
-char* findComma(char *begin) {
-    while(*begin != ',' && *begin != '\0')
+char *findComma(char *begin) {
+    while (*begin != ',' && *begin != '\0')
         begin++;
 
     return begin;

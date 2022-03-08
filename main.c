@@ -11,5 +11,8 @@ int main() {
     test_functions_string();
     test_string_tasks();
 
+    char s[] = "A\n";
+    printWordBeforeFirstWordWithA(s);
+
     return 0;
 }

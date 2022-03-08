@@ -26,6 +26,7 @@ CMakeFiles/laba5b_5d.dir/main.c.obj: \
  ../libs/string/tasks/getCountOfPalindromesWords.h \
  ../libs/string/tasks/getStringWithAlternatingWords.h \
  ../libs/string/tasks/isLexicographicallyOrdered.h \
+ ../libs/string/tasks/printWordBeforeFirstWordWithA.h \
  ../libs/string/tasks/printWordsInReverseOrder.h \
  ../libs/string/tasks/removeExtraSpaces.h \
  ../libs/string/tasks/removeNonLetters.h \

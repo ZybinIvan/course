@@ -13,6 +13,7 @@
 #include "../tasks/getCountOfPalindromesWords.h"
 #include "../tasks/getStringWithAlternatingWords.h"
 #include "../tasks/reverseWordOrder.h"
+#include "../tasks/printWordBeforeFirstWordWithA.h"
 
 
 void assertString(const char *expected, char *got,
@@ -180,21 +181,21 @@ void test_getCountOfPalindromesWords_emptyString() {
 }
 
 // task 9
-void test_getStringWithAlternatingWords_sameCountOfWords(){
+void test_getStringWithAlternatingWords_sameCountOfWords() {
     char s1[] = "test this\0";
     char s2[] = "of function\0";
 
     ASSERT_STRING("test of this function\0", getStringWithAlternatingWords(s1, s2));
 }
 
-void test_getStringWithAlternatingWords_differentCountOfWords1(){
+void test_getStringWithAlternatingWords_differentCountOfWords1() {
     char s1[] = "successful of function\0";
     char s2[] = "test this\0";
 
     ASSERT_STRING("successful test of this function\0", getStringWithAlternatingWords(s1, s2));
 }
 
-void test_getStringWithAlternatingWords_differentCountOfWords2(){
+void test_getStringWithAlternatingWords_differentCountOfWords2() {
     char s1[] = "successful of\0";
     char s2[] = "test this function\0";
 
@@ -209,6 +210,7 @@ void test_reverseWordOrder() {
 
     ASSERT_STRING("successful test of this function", s);
 }
+
 void test_reverseWordOrder2() {
     char s[] = "main   test\0";
 
@@ -225,6 +227,26 @@ void test_reverseWordOrder_emptyString() {
     ASSERT_STRING("\0", s);
 }
 
+// task 11
+void testAll_getWordBeforeFirstWordWithA() {
+    char *beginWord, *endWord;
+
+    char s1[] = "";
+    assert (getWordBeforeFirstWordWithA(s1, &beginWord, &endWord) == EMPTY_STRING);
+
+    char s2[] = " ABC ";
+    assert (getWordBeforeFirstWordWithA(s2, &beginWord, &endWord) == FIRST_WORD_WITH_A);
+
+    char s3[] = "BC A";
+    assert (getWordBeforeFirstWordWithA(s3, &beginWord, &endWord) == WORD_FOUND);
+    char got[MAX_WORD_SIZE];
+    copy(beginWord, endWord, got);
+    got[endWord - beginWord] = '\0';
+    ASSERT_STRING ("BC", got);
+
+    char s4[] = "B Q WE YR OW IUWR ";
+    assert (getWordBeforeFirstWordWithA(s4, &beginWord, &endWord) == NOT_FOUND_A_WORD_WITH_A);
+}
 
 void test_string_tasks() {
     // task 1
@@ -267,6 +289,9 @@ void test_string_tasks() {
     test_reverseWordOrder();
     test_reverseWordOrder2();
     test_reverseWordOrder_emptyString();
+
+    // task 11
+    testAll_getWordBeforeFirstWordWithA();
 }
 
 #endif

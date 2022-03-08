@@ -78,4 +78,11 @@ int getWordComma(char *beginSearch, WordDescriptor *word);
 
 bool isPalindromeWord(WordDescriptor word);
 
+typedef enum WordBeforeFirstWordWithAReturnCode {
+    FIRST_WORD_WITH_A,
+    NOT_FOUND_A_WORD_WITH_A,
+    WORD_FOUND,
+    EMPTY_STRING
+} WordBeforeFirstWordWithAReturnCode;
+
 #endif //LABA5B_5D_STRING__H
