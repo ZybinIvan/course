@@ -11,6 +11,7 @@
 #include "../tasks/replaceWords.h"
 #include "../tasks/isLexicographicallyOrdered.h"
 #include "../tasks/getCountOfPalindromesWords.h"
+#include "../tasks/getStringWithAlternatingWords.h"
 
 
 void assertString(const char *expected, char *got,
@@ -29,7 +30,8 @@ void assertString(const char *expected, char *got, char const *fileName, char co
         fprintf(stderr, "%s - OK\n", funcName);
 }
 
-void test_removeNonLetter() {
+// task 1
+void test_removeNonLetter_withSpaces() {
     char s1[] = " m  a i n \0";
 
     removeNonLetters(s1);
@@ -37,7 +39,24 @@ void test_removeNonLetter() {
     ASSERT_STRING("main\0", s1);
 }
 
-void test_removeExtraSpaces() {
+void test_removeNonLetter_withoutSpaces() {
+    char s1[] = "main\0";
+
+    removeNonLetters(s1);
+
+    ASSERT_STRING("main\0", s1);
+}
+
+void test_removeNonLetter_emptyString() {
+    char s1[] = "\0";
+
+    removeNonLetters(s1);
+
+    ASSERT_STRING("\0", s1);
+}
+
+// task 2
+void test_removeExtraSpaces_withExtraSpaces() {
     char s[] = "  m   a  i n \0";
 
     removeExtraSpace(s);
@@ -45,6 +64,15 @@ void test_removeExtraSpaces() {
     ASSERT_STRING(" m a i n \0", s);
 }
 
+void test_removeExtraSpaces_withoutExtraSpaces() {
+    char s[] = "m a i n \0";
+
+    removeExtraSpace(s);
+
+    ASSERT_STRING("m a i n \0", s);
+}
+
+// task 3
 void test_digitsToEndLettersToStart() {
     char s[] = "3mai12n 5e\0";
 
@@ -53,6 +81,7 @@ void test_digitsToEndLettersToStart() {
     ASSERT_STRING("main312 e5\0", s);
 }
 
+// task 4
 void test_replaceDigitForEquivalentCountOfSpaces() {
     char s[] = "m1a2i3n\0";
 
@@ -69,6 +98,7 @@ void test_replaceDigitForEquivalentCountOfSpaces_withoutDigits() {
     ASSERT_STRING(" main\0", s);
 }
 
+// task 5
 void test_replace_w2LessThanW1() {
     char w1[] = "main\0";
     char w2[] = "123\0";
@@ -89,6 +119,7 @@ void test_replace_w1LessThanW2() {
     ASSERT_STRING("12345 12345 task 12345\0", s);
 }
 
+// task 6
 void test_isLexicographicallyOrdered_ordered() {
     char s[] = "a abc abcd\0";
 
@@ -121,6 +152,8 @@ void test_isLexicographicallyOrdered_allEqual() {
     ASSERT_STRING("1", "1");
 }
 
+
+// task 8
 void test_getCountOfPalindromesWords_withPalindromes() {
     char s[] = "main,tenet,121,r\0";
 
@@ -145,27 +178,64 @@ void test_getCountOfPalindromesWords_emptyString() {
     ASSERT_STRING("0", "0");
 }
 
+// task 9
+void test_getStringWithAlternatingWords_sameCountOfWords(){
+    char s1[] = "test this\0";
+    char s2[] = "of function\0";
+
+    ASSERT_STRING("test of this function\0", getStringWithAlternatingWords(s1, s2));
+}
+
+void test_getStringWithAlternatingWords_differentCountOfWords1(){
+    char s1[] = "successful of function\0";
+    char s2[] = "test this\0";
+
+    ASSERT_STRING("successful test of this function\0", getStringWithAlternatingWords(s1, s2));
+}
+
+void test_getStringWithAlternatingWords_differentCountOfWords2(){
+    char s1[] = "successful of\0";
+    char s2[] = "test this function\0";
+
+    ASSERT_STRING("successful test of this function\0", getStringWithAlternatingWords(s1, s2));
+}
+
 void test_string_tasks() {
-    test_removeNonLetter();
+    // task 1
+    test_removeNonLetter_withSpaces();
+    test_removeNonLetter_withoutSpaces();
+    test_removeNonLetter_emptyString();
 
-    test_removeExtraSpaces();
+    // task 2
+    test_removeExtraSpaces_withExtraSpaces();
+    test_removeExtraSpaces_withoutExtraSpaces();
 
+    // task 3
     test_digitsToEndLettersToStart();
 
+    // task 4
     test_replaceDigitForEquivalentCountOfSpaces();
     test_replaceDigitForEquivalentCountOfSpaces_withoutDigits();
 
+    // task 5
     test_replace_w2LessThanW1();
     test_replace_w1LessThanW2();
 
+    // task 6
     test_isLexicographicallyOrdered_ordered();
     test_isLexicographicallyOrdered_notOrdered();
     test_isLexicographicallyOrdered_emptyString();
     test_isLexicographicallyOrdered_allEqual();
 
+    // task 8
     test_getCountOfPalindromesWords_withPalindromes();
     test_getCountOfPalindromesWords_withoutPalindromes();
     test_getCountOfPalindromesWords_emptyString();
+
+    // task 9
+    test_getStringWithAlternatingWords_sameCountOfWords();
+    test_getStringWithAlternatingWords_differentCountOfWords1();
+    test_getStringWithAlternatingWords_differentCountOfWords2();
 }
 
 #endif

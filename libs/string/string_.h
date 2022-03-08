@@ -6,11 +6,11 @@
 #include <memory.h>
 #include <strings.h>
 #include <stdbool.h>
+#include <malloc.h>
 
 #define MAX_STRING_SIZE 100
 #define MAX_N_WORDS_IN_STRING 100
 #define MAX_WORD_SIZE 20
-
 
 
 char _stringBuffer[MAX_STRING_SIZE + 1];
@@ -65,14 +65,14 @@ typedef struct BagOfWords {
     size_t size;
 } BagOfWords;
 
-BagOfWords _bag ;
-BagOfWords _bag2 ;
+BagOfWords _bag;
+BagOfWords _bag2;
 
 void getBagOfWords(BagOfWords *bag, char *s);
 
-char* findNonComma(char *begin);
+char *findNonComma(char *begin);
 
-char* findComma(char *begin);
+char *findComma(char *begin);
 
 int getWordComma(char *beginSearch, WordDescriptor *word);
 
